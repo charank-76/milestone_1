@@ -1,0 +1,15 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "feedback_text": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "feedback_text"
+  ]
+}
