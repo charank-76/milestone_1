@@ -1,5 +1,6 @@
 "use client";
 import MenuCard from "../components/MenuCard";
+import Aboutus from "../components/Aboutus";
 
 import {useState} from 'react'
 
@@ -40,40 +41,40 @@ export default function MenuPage() {
  ]
   const Ldish=[
     {
-        title: "Chicken Alfredo",
+        title: "Brownies",
         description: "Ricotta / goat cheese / beetroot",
-        hprice: 20,
-        fprice: 40 ,
-        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F1.jpg&w=640&q=75",
-        desc: "Free Drinks"
+        hprice: 34,
+        fprice: 65 ,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F6.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
     },
     {
-        title: "Fish Chips",
+        title: "Cheesecakes",
         description: "Atlantic / chips / salad / tartare",
-        hprice: 36,
-        fprice: 70,
-        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F2.jpg&w=640&q=75",
-        desc: "Free Drinks"
+        hprice: 55,
+        fprice: 100,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F8.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
     },
     {
-        title: "Ebony Fillet Steak",
+        title: "Muffins",
         description: "Truffle mash / pepper sauce",
-        hprice: 44,
-        fprice: 85,
-        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F3.jpg&w=640&q=75",
-        desc: "Free Drinks"
+        hprice: 66,
+        fprice: 120,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F7.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
     },
     {
-        title: "Chicken Grill",
+        title: "Cupcakes",
         description: "Ricotta / goat cheese / beetroot",
         hprice: 20,
         fprice: 40,
-        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F4.jpg&w=640&q=75",
-        desc: "Free Drinks"
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F5.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
     }
  ]
  return(<div className="bg-white w-full min-h-screen flex flex-col items-center  ">
-  <div className="bg-black h-[250px] w-full flex justify-center items-center mb-10 font-bold text-white ">
+  <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex justify-center items-center mb-10 font-bold text-white ">
     <div className="flex flex-col items-center">
 <h1 className="text-4xl">Food Menu</h1>
 <h3>home/food menu</h3></div>
@@ -215,6 +216,7 @@ export default function MenuPage() {
       </div>
     </div>
     </div>
+      <Aboutus />
     </div>
     
  )
