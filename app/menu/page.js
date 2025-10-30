@@ -3,6 +3,7 @@ import MenuCard from "../components/MenuCard";
 import Aboutus from "../components/Aboutus";
 
 import {useState} from 'react'
+import Footer from "../components/Footer";
 
 export default function MenuPage() {
  const Bdish=[
@@ -39,8 +40,43 @@ export default function MenuPage() {
         desc: "Free Drinks"
     }
  ]
-  const Ldish=[
+  const Sdish=[
     {
+        title: "Salmon Fry",
+        description: "Ricotta / goat cheese / beetroot",
+        hprice: 40,
+        fprice: 80 ,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F9.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    },
+    {
+        title: "Pangasius or Basa",
+        description: "Atlantic / chips / salad / tartare",
+        hprice: 55,
+        fprice: 100,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F10.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    },
+    {
+        title: "Clams",
+        description: "Truffle mash / pepper sauce",
+        hprice: 66,
+        fprice: 120,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F11.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    },
+    {
+        title: "Red Crab",
+        description: "Ricotta / goat cheese / beetroot",
+        hprice: 20,
+        fprice: 40,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F12.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    }
+ ]
+
+ const Ldish=[
+   {
         title: "Brownies",
         description: "Ricotta / goat cheese / beetroot",
         hprice: 34,
@@ -72,7 +108,45 @@ export default function MenuPage() {
         imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F5.jpg&w=640&q=75",
         desc: "Extra Free Juice"
     }
+  
  ]
+
+  const Bedish=[
+   {
+        title: "Wine",
+        description: "Ricotta / goat cheese / beetroot",
+        hprice: 34,
+        fprice: 65 ,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F13.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    },
+    {
+        title: "Coffee",
+        description: "Atlantic / chips / salad / tartare",
+        hprice: 55,
+        fprice: 100,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F14.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    },
+    {
+        title: "Hot Chocolate",
+        description: "Truffle mash / pepper sauce",
+        hprice: 66,
+        fprice: 120,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F15.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    },
+    {
+        title: "Milk Shake",
+        description: "Ricotta / goat cheese / beetroot",
+        hprice: 20,
+        fprice: 40,
+        imageUrl: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ffood%2F16.jpg&w=640&q=75",
+        desc: "Extra Free Juice"
+    }
+  
+ ]
+
  return(<div className="bg-white w-full min-h-screen flex flex-col items-center  ">
   <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex justify-center items-center mb-10 font-bold text-white ">
     <div className="flex flex-col items-center">
@@ -104,7 +178,7 @@ export default function MenuPage() {
 
      <div className="flex flex-row mb-10 ml-[-480px] mt-12">
             <div className="flex flex-col gap-6 mr-[80px] mt-10">
-        {Bdish.map((element) =>{
+        {Ldish.map((element) =>{
             return(
                 <MenuCard
               key={element.title}
@@ -126,7 +200,49 @@ export default function MenuPage() {
        </div>
  
     </div>
-    <div className="bg-black h-[500px] w-full flex  mb-10 font-bold text-white ">
+    <div className="flex flex-row mb-10 gap-2 mt-2">
+            <div className="flex flex-col gap-6 mt-10 border-r-2 border-gray-500 p-4">
+               <p className="text-4xl font-serif text-stone-600 ml-[200px]">--Fresh from ocean--</p>
+              <p className="text-5xl font-serif text-black ml-[280px]">Sea Food</p>
+        {Sdish.map((element) =>{
+            return(
+                <MenuCard
+              key={element.title}
+                title={element.title}
+                description={element.description}
+                hprice={element.hprice}
+                 fprice={element.fprice}
+                imageUrl={element.imageUrl}
+                desc={element.desc}
+                />      
+            )
+        }
+    )}</div>
+    
+         <div className="flex flex-col gap-6  mt-12 p-2">
+          <p className="text-4xl font-serif text-stone-600 ml-[220px]">--Drinks & Wine--</p>
+              <p className="text-5xl font-serif text-black ml-[280px]">Beverage</p>
+        {Bedish.map((element) =>{
+            return(
+                <MenuCard
+              key={element.title}
+                title={element.title}
+                description={element.description}
+                hprice={element.hprice}
+                 fprice={element.fprice}
+                imageUrl={element.imageUrl}
+                desc={element.desc}
+                />      
+            )
+        }
+    )}</div>
+ 
+    </div>
+
+
+
+
+    <div className="bg-black h-[500px] w-full flex   font-bold text-white ">
     <div className="flex flex-row items-center">
         <div className="flex flex-col w-[800px] ml-20">
             <div className="font-bold text-7xl text-gray-50 w-[400px] ">30 Minutes Delivery!</div>
@@ -179,10 +295,10 @@ export default function MenuPage() {
       </div>
 
       
-      <div className="w-[550px] ]">
+      <div className="w-[550px] ">
        
 
-        <div className="flex items-center gap-8  mb-[10px] mt-[10px] text-[30px] text-amber-500">
+        <div className="flex items-center gap-8  mb-[10px]  text-[30px] text-amber-500">
           <p>⭐⭐⭐⭐⭐</p>
           <span className="text-[16px] text-amber-950 font-semibold">(5/5)</span>
         </div>
@@ -216,8 +332,51 @@ export default function MenuPage() {
       </div>
     </div>
     </div>
-      <Aboutus />
+     
+
+      <div className="bg-blue-950 h-[500px] w-full flex text-white mb-25 ">
+        <div className="w-1/2 font-sans flex flex-col ml-[100px]  mt-[80px]">
+        <p className="text-2xl font-serif mb-[17px] ">RESERVATION ---</p>
+        <p className="w-[670px] font-serif text-5xl  mb-[25px]">Reservation Your Favorite Private Table</p>
+        <p className="w-[670px] font-normal text-[18px]">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting</p>
+        <div className="flex gap-8">
+          <div className="flex flex-col gap-2 border-r mt-[30px] border-gray-500">
+            <p className="font-serif text-3xl pr-8">Launch Menu</p>
+            <p className="font-normal text-[20px]">30+ Items</p>
+</div>
+             <div className="flex flex-col gap-2 mt-[30px]">
+            <p className="font-serif text-3xl pr-8">Dinner Menu</p>
+            <p className="font-normal text-[20px]">50+ Items</p>
+          </div>
+        </div>
+        </div>
+            <div className="w-[500px] h-[500px] p-10 font-normal flex flex-col ml-[50px] bg-gray-900 rounded-[50px] border-2 border-gray-500  mt-[80px]">
+              <p>Phone</p>
+              <input type="text" placeholder="Your Phone Number"  className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3 "/>
+              <p>Date</p>
+              <input type="date" className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3 "/>
+              <p>Time</p>
+              <input type="time" className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3 "/>
+              <p>Persons</p>
+              <input type="number" placeholder="Number of People" className="bg-gray-800 h-[40px] border-2 border-gray-500 rounded-md mt-2 mb-4 pl-3 "/>
+              <button className="bg-amber-600 w-[200px] h-[50px] rounded-md mt-4 text-white font-bold hover:bg-amber-400">Book A Table</button>
+            </div>
+        <div></div>
+        </div>
+<div className="flex flex-col">
+  
+  <div className="px-20 border-b-2 border-gray-500 ">
+    <Aboutus />
+  </div>
+
+  {/* Footer Section */}
+  <div className="w-full  ">
+    <Footer />
+  </div>
+</div>
+
+
     </div>
-    
+   
  )
 }

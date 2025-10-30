@@ -4,7 +4,7 @@ function MenuCard({ title, description, hprice,fprice, imageUrl ,desc}) { {
   return (
     <div className="bg-white text-2xl text-black flex flex-row p-4 rounded-lg shadow-md menu-card">
       <img src={imageUrl} className="w-[100px] h-[100px]" />
-      <div className="ml-[10px] mt-[10px] w-[500px]">
+      <div className="ml-[10px] mt-[10px] w-[400px]">
         <div className="font-bold">{title}</div>
         <div >{description}</div>
         </div>

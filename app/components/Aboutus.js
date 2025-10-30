@@ -2,7 +2,7 @@
 
 function Aboutus() {
     return(
-         <div className="bg-gray-950 text-white px-16 py-12 font-sans">
+         <div className="bg-gray-950 text-white px-16 py-12 font-sans border-2 border-gray-500  h-[380px]">
       <div className="flex justify-between border-b border-gray-700 pb-8">
        
         <div className="w-1/4 border-r border-gray-700 ">
