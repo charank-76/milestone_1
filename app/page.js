@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "./components/Navbar";
 import PMenuCard from "./components/PMenuCard";
+import LMenuCard from "./components/LMenuCard";
 
 export default function Home() {
   const PMenu=[
@@ -25,6 +26,54 @@ export default function Home() {
       price:18
     }
   ]
+
+  const Ldish = [
+    {
+      name: "Classic Burger",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F16.png&w=1080&q=75",
+      desc: "Ricotta / goat cheese / beetroot",
+      sugg: "Must Try",
+      price: 35,
+    },
+    {
+      name: "Cheese Burger",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F17.png&w=1080&q=75",
+      desc: "Atlantic / chips / salad / tartare",
+     sugg: "Normal",
+      price: 42,
+    },
+    {
+      name: "Grilled Chicken",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F18.png&w=1080&q=75",
+      desc: "Truffle mash / pepper sauce.",
+     sugg: "Normal",
+      price: 28,
+    }
+  ];
+
+   const Lmdish = [
+    {
+      name: "Margherita Pizza",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F13.png&w=1080&q=75",
+      desc: "Ricotta / goat cheese / beetroot",
+      sugg: "Must Try",
+      price: 15,
+    },
+    {
+      name: "Pepperoni Pizza",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F14.png&w=1080&q=75",
+      desc: "Atlantic / chips / salad / tartare",
+     sugg: "New Item",
+      price: 29,
+    },
+    {
+      name: "BBQ Chicken Pizza",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F15.png&w=1080&q=75",
+      desc: "Truffle mash / pepper sauce.",
+     sugg: "Normal",
+      price: 45,
+    }
+  ];
   return (
     <div className="min-h-screen bg-white text-black">
    <Navbar/>
@@ -217,7 +266,39 @@ export default function Home() {
 
 
 
-
+<section>
+<div className=" flex justify-center items-center bg-white">
+      <div className="flex flex-col gap-6   ">
+        {Ldish.map((item) => (
+          <LMenuCard
+            key={item.name}
+             imgurl={item.imgurl}
+            name={item.name}
+            desc={item.desc}
+            sugg={item.sugg}
+            price={item.price}
+           
+          />
+        ))}
+      </div>
+       <div className="flex flex-col gap-6   ">
+        {Lmdish.map((item) => (
+          <LMenuCard
+            key={item.name}
+             imgurl={item.imgurl}
+            name={item.name}
+            desc={item.desc}
+            sugg={item.sugg}
+            price={item.price}
+           
+          />
+        ))}
+      </div>
     </div>
+  </section>    </div>
   );
 }
+
+
+
+
