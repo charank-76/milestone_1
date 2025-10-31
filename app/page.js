@@ -1,26 +1,10 @@
 "use client";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black">
-      <nav className="w-full flex items-center justify-between px-12 py-5 bg-white text-black fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
-        <div className="flex items-center gap-2 text-2xl font-bold tracking-wide">
-          <img
-            src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"
-            className="w-10 h-10 object-contain"
-          />
-        </div>
-        <ul className="hidden md:flex items-center gap-10 text-base font-medium">
-          <li className="hover:text-red-500 cursor-pointer transition-all duration-300">Home</li>
-          <li className="hover:text-red-500 cursor-pointer transition-all duration-300">Pages</li>
-          <li className="hover:text-red-500 cursor-pointer transition-all duration-300">Menu</li>
-          <li className="hover:text-red-500 cursor-pointer transition-all duration-300">Blog</li>
-          <li className="hover:text-red-500 cursor-pointer transition-all duration-300">Shop</li>
-        </ul>
-        <button className="bg-red-500 hover:bg-black text-white px-6 py-2 rounded-full font-semibold transition-all duration-300">
-          Reservation
-        </button>
-      </nav>
+   <Navbar/>
 
       <div className="flex items-center justify-between px-20 pt-32">
         <div className="flex flex-col gap-4"></div>

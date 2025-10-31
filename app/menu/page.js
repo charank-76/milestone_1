@@ -1,11 +1,16 @@
 "use client";
 import MenuCard from "../components/MenuCard";
 import Aboutus from "../components/Aboutus";
+import Customer from "../components/Customer";
+import {useRouter} from "next/navigation";
 
 import {useState} from 'react'
 import Footer from "../components/Footer";
+import Customer1 from "../components/Customer";
+import Navbar from "../components/Navbar";
 
 export default function MenuPage() {
+  const router = useRouter();
  const Bdish=[
     {
         title: "Chicken Alfredo",
@@ -148,10 +153,15 @@ export default function MenuPage() {
  ]
 
  return(<div className="bg-white w-full min-h-screen flex flex-col items-center  ">
+  <Navbar/>
   <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex justify-center items-center mb-10 font-bold text-white ">
     <div className="flex flex-col items-center">
 <h1 className="text-4xl">Food Menu</h1>
-<h3>home/food menu</h3></div>
+<div className="flex">
+<h3 className="hover:text-red-500 cursor-pointer" 
+onClick={(e)=>{router.push("/")}}>home</h3>
+<h3>/food menu</h3>
+</div></div>
   </div>
     <div className="flex flex-row mb-10 mt-10">
         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[600px] h-[700px] rounded-[50px]"/>
@@ -255,83 +265,7 @@ export default function MenuPage() {
 
 
 
-<div className="w-full items-center justify-center bg-gray-100 px-[100px] py-[60px] font-medium">
-      <p className="text-amber-600  text-[25px] ml-[500px] mb-[8px] font-semibold  ">
-          Happy Customers
-        </p>
-
-        <h1 className="text-[40px] font-bold ml-[380px] mb-[50px] text-black ">
-          Our Customers Feedback
-        </h1>
-
-
-
-    <div className="flex flex-row mb-20  items-center justify-center ">
-  
-     <div className=" mr-[50px] ">
-     
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75"
-          alt="Main"
-          className="w-[400px] h-[450px] rounded-[30px] object-cover shadow-2xl shadow-gray-600"
-        />
-
-       
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F6.jpg&w=640&q=75"
-          alt="Customer1"
-          className="w-[70px] h-[70px]  mt-[-320px] ml-[350px] mb-[50px] rounded-full border-4 border-white shadow-lg object-cover  "
-        />
-        <img
-          src="https://th.bing.com/th/id/OIP.A3rJ-nO5s3Bv2qCF2r3thAHaEK?w=208&h=117&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-          alt="Customer2"
-          className="w-[80px] h-[80px] mb-[25px] ml-[350px] rounded-full border-4 border-white shadow-lg object-cover   "
-        />
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F7.jpg&w=640&q=75"
-          alt="Customer3"
-          className="w-[70px] h-[70px]  ml-[370px] rounded-full border-4 border-white shadow-lg object-cover   "
-        />
-      </div>
-
-      
-      <div className="w-[550px] ">
-       
-
-        <div className="flex items-center gap-8  mb-[10px]  text-[30px] text-amber-500">
-          <p>⭐⭐⭐⭐⭐</p>
-          <span className="text-[16px] text-amber-950 font-semibold">(5/5)</span>
-        </div>
-
-        <h2 className="text-[35px] font-semibold text-gray-900 mb-[15px]">
-          The best food ever
-        </h2>
-
-        <p className="text-amber-800 text-[20px]  mb-[30px]">
-          “Targeting consultation discover apartments. Indulgence off under folly
-          death wrote cause her way spite. Plan upon yet way get cold spot its week.
-          Almost do am or limits hearts. Resolve parties but why she shewing.”
-        </p>
-
-        <div>
-          <h3 className="text-[22px] font-semibold text-black">
-            Matthew J. Wyman
-          </h3>
-          <p className="text-[20px] text-amber-600 font-medium">
-            Senior Consultant
-          </p>
-        </div>
-
-        
-        <div className="flex gap-[10px] mt-[25px]">
-          <div className="w-[10px] h-[10px] rounded-full bg-amber-500" />
-          <div className="w-[10px] h-[10px] rounded-full bg-gray-300" />
-          <div className="w-[10px] h-[10px] rounded-full bg-gray-300" />
-          <div className="w-[10px] h-[10px] rounded-full bg-gray-300" />
-        </div>
-      </div>
-    </div>
-    </div>
+<Customer />
      
 
       <div className="bg-blue-950 h-[500px] w-full flex text-white mb-25 ">
