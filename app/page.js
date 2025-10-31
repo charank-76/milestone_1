@@ -168,6 +168,51 @@ export default function Home() {
   </div>
 </section>
 
+  <section className="py-20 px-16 bg-white text-black text-center">
+  <p className="text-red-500 font-semibold tracking-widest mb-2">── NEWS & BLOG ──</p>
+  <h2 className="text-4xl font-bold mb-12">Our Latest News & Blog</h2>
+
+  <div className="flex justify-center gap-10 flex-wrap">
+    {[
+      {
+        img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75",
+        date: "24",
+        month: "DEC",
+        title: "Picked up a Brussels burger Sprouts with ham",
+        link:"Read more"
+      },
+      {
+        img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75",
+        date: "18",
+        month: "NOV",
+        title: "This prefabricated passive house is highly sustainable",
+        link:"Read more"
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="bg-white shadow-lg rounded-xl  w-[450px] relative"
+      >
+        <div className="relative">
+          <img src={item.img} className="w-full h-[280px] object-cover" />
+          <div className="absolute bottom-0 right-5 bg-red-600 text-white font-bold px-4 py-2 rounded-t-md text-center">
+            <div className="text-xl">{item.date}</div>
+            <div className="text-sm">{item.month}</div>
+          </div>
+        </div>
+
+        <div className="p-6 text-left">
+          <p className="text-gray-600 text-sm mb-2">
+            BY <span className="font-semibold text-black">MD SOHAG</span> <span className="text-red-600">•</span> BURGER, FOOD
+          </p>
+          <h3 className="text-xl font-bold hover:text-red-600">{item.title}</h3>
+            <h3 className="text-xl font-bold text-red-600">{item.link}</h3>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
 
 
