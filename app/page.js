@@ -1,7 +1,30 @@
 "use client";
 import Navbar from "./components/Navbar";
+import PMenuCard from "./components/PMenuCard";
 
 export default function Home() {
+  const PMenu=[
+    {
+      name:"Hamburger",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F9.png&w=1080&q=75",
+      price:12
+    },
+    {
+      name:"Chicken Burger",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F10.png&w=1080&q=75",
+      price:16
+    },
+    {
+      name:"Cheese Burger",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F11.png&w=1080&q=75",
+      price:25
+    },
+    {
+      name:"Bacon Burger",
+      imgurl:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F12.png&w=1080&q=75",
+      price:18
+    }
+  ]
   return (
     <div className="min-h-screen bg-white text-black">
    <Navbar/>
@@ -93,73 +116,19 @@ export default function Home() {
   <h2 className="text-4xl font-bold mb-12">Popular Burger</h2>
 
   <div className="flex justify-center gap-10 flex-wrap">
-    <div className="flex flex-col items-center bg-white p-6 rounded-3xl w-[250px]">
-      <img
-        src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F9.png&w=1080&q=75"
-        className="w-[180px] h-[160px] object-contain mb-4"
-      />
-      <h3 className="font-bold text-xl mb-2">Hamburger</h3>
-      <div className="flex justify-between items-center bg-white rounded-full px-4 py-2 w-[80%] mb-4">
-        <div className="text-yellow-400 text-lg">★★★★★</div>
-        <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-          $12
-        </div>
-      </div>
-      <p className="text-gray-600 text-sm">
-        The hamburger is the original and the best-known burger to date
-      </p>
-    </div>
-
-    <div className="flex flex-col items-center bg-white p-6 rounded-3xl w-[250px]">
-      <img
-        src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F10.png&w=1080&q=75"
-        className="w-[180px] h-[160px] object-contain mb-4"
-      />
-      <h3 className="font-bold text-xl mb-2">Chicken Burger</h3>
-      <div className="flex justify-between items-center bg-white rounded-full px-4 py-2 w-[80%] mb-4">
-        <div className="text-yellow-400 text-lg">★★★★★</div>
-        <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-          $16
-        </div>
-      </div>
-      <p className="text-gray-600 text-sm">
-        The hamburger is the original and the best-known burger to date
-      </p>
-    </div>
-
-    <div className="flex flex-col items-center bg-white p-6 rounded-3xl w-[250px]">
-      <img
-        src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F11.png&w=1080&q=75"
-        className="w-[180px] h-[160px] object-contain mb-4"
-      />
-      <h3 className="font-bold text-xl mb-2">Cheese Burger</h3>
-      <div className="flex justify-between items-center bg-white rounded-full px-4 py-2 w-[80%] mb-4">
-        <div className="text-yellow-400 text-lg">★★★★★</div>
-        <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-          $25
-        </div>
-      </div>
-      <p className="text-gray-600 text-sm">
-        The hamburger is the original and the best-known burger to date
-      </p>
-    </div>
-
-    <div className="flex flex-col items-center bg-white p-6 rounded-3xl w-[250px]">
-      <img
-        src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F12.png&w=1080&q=75"
-        className="w-[180px] h-[160px] object-contain mb-4"
-      />
-      <h3 className="font-bold text-xl mb-2">Bacon Burger</h3>
-      <div className="flex justify-between items-center bg-white rounded-full px-4 py-2 w-[80%] mb-4">
-        <div className="text-yellow-400 text-lg">★★★★★</div>
-        <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-          $18
-        </div>
-      </div>
-      <p className="text-gray-600 text-sm">
-        The hamburger is the original and the best-known burger to date
-      </p>
-    </div>
+    {PMenu.map((element) =>{
+            return(
+                <PMenuCard
+              key={element.name}
+                name={element.name}
+                imgurl={element.imgurl}
+                 price={element.price}
+              
+                />      
+            )
+        }
+    )}
+   
   </div>
 </section>
 <section className="bg-black flex justify-center items-center gap-10 py-16">
