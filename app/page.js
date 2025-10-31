@@ -132,8 +132,45 @@ export default function Home() {
   </div>
 </section>
 <section className="bg-black flex justify-center items-center gap-10 py-16">
-  
+  <div className="relative w-[500px] h-[250px] rounded-3xl ">
+    <img
+      src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F1.jpg&w=1920&q=75"
+      className="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div className="absolute inset-0 bg-red-900"></div>
+    <div className="relative z-10 text-white flex flex-col justify-center items-start h-full px-8 space-y-3">
+      <p className="italic text-lg">Eat Sleep And</p>
+      <h2 className="text-4xl font-bold ">DREAM<br />BURGER</h2>
+      <button className="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-red-600 hover:text-white">
+        Accept This Deal
+      </button>
+      <div className="absolute top-5 right-8 text-xl font-bold">$35.00</div>
+    </div>
+  </div>
+
+  <div className="relative w-[500px] h-[250px] rounded-3xl ">
+    <img
+      src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F2.jpg&w=1920&q=75"
+      className="absolute inset-0 w-full h-full object-cover "
+    />
+    <div className="absolute inset-0 bg-yellow-300"></div>
+    <div className="absolute top-5 right-5 bg-white text-red-600 font-bold rounded-xl px-3 py-1 text-center z-10">
+      <div className="text-2xl">50</div>
+      <div className="text-sm">OFF</div>
+    </div>
+    <div className="relative z-10 text-white flex flex-col justify-center items-start h-full px-8 space-y-3">
+      <p className="italic text-lg">Best deal ever</p>
+      <h2 className="text-4xl font-bold ">LUGER<br />BURGER</h2>
+      <button className="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-white hover:text-black">
+        Accept This Deal
+      </button>
+    </div>
+  </div>
 </section>
+
+
+
+
 
 
     </div>
