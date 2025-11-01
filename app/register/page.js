@@ -47,17 +47,17 @@ export default function Main() {
               <input
                 type="email"
                 placeholder="Email*"
-                className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  px-4 py-3  text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  px-4 py-3  text-black border border-blue-400"
               />
               <input
                 type="password"
                 placeholder="Password*"
-                className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  text-black px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  text-black px-4 py-3 border border-blue-400"
               />
                <input
                 type="password"
                 placeholder=" Confirm-Password*"
-                className="dark: placeholder-black border text-black bg-white placeholder-black border text-black bg-gray-300  px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="dark: placeholder-black border text-black bg-white placeholder-black border text-black bg-gray-300  px-4 py-3 border border-blue-400"
               /></form>
               <button
                 type="submit"
