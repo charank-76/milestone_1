@@ -2,12 +2,12 @@
 
 function Aboutus() {
     return(
-         <div className="bg-gray-950 text-white px-16 py-12 font-sans border-2 border-gray-500  h-[380px]">
-      <div className="flex justify-between border-b border-gray-700 pb-8">
+         <div className="bg-gray-950 text-white md:px-16 md:py-12 font-sans py-10 px-2 border-2 border-gray-500  md:h-[380px]">
+      <div className="flex md:flex-row flex-col justify-between border-b border-gray-700 pb-8">
        
-        <div className="w-1/4 border-r border-gray-700 ">
+        <div className="md:w-1/4 border-r border-gray-700 ">
           <h2 className="text-2xl font-semibold mb-6">About Us</h2>
-          <p className="text-gray-400 mb-8 leading-relaxed">
+          <p className="text-gray-400 md:mb-8 mb-3 leading-relaxed">
             Continued at zealously necessary is Surrounded sir motionless she
             end literature. Gay direction neglected.
           </p>
@@ -21,7 +21,7 @@ function Aboutus() {
         </div>
 
        
-        <div className="w-1/4 ml-[50px]">
+        <div className="md:w-1/4 md:ml-[50px] mt-8 md:mt-0">
           <h2 className="text-2xl font-semibold mb-6">Explore</h2>
           <ul className="space-y-3 text-gray-400">
             <li>Company Profile</li>
@@ -33,7 +33,7 @@ function Aboutus() {
           </ul>
         </div>
 
-        <div className="w-1/4 ml-[-80px]">
+        <div className="md:w-1/4 md:ml-[-80px] mt-8 md:mt-0">
           <h2 className="text-2xl font-semibold mb-6">Contact Info</h2>
           <div className="space-y-4 text-gray-400">
             <div className="flex  space-x-3">
@@ -56,8 +56,8 @@ function Aboutus() {
         </div>
 
        
-        <div className="w-1/4">
-          <h2 className="text-2xl font-semibold mb-6">Newsletter</h2>
+        <div className="md:w-1/4">
+          <h2 className="text-2xl font-semibold mb-6 mt-8 md:mt-0">Newsletter</h2>
           <p className="text-gray-400 mb-6">
             Join our subscribers list to get the latest news and special offers.
           </p>

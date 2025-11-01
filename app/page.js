@@ -81,25 +81,25 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black">
    <Navbar/>
 
-      <div className="flex items-center justify-between px-20 pt-32">
+      <div className="flex items-center justify-between md:px-20  pt-32">
         <div className="flex flex-col gap-4"></div>
         <div className="relative">
           <img
             src="https://thumbs.dreamstime.com/b/tasty-burger-french-fries-fire-close-up-home-made-flames-137249900.jpg"
-            className="w-[1300px] h-[700px] rounded-2xl object-cover"
+            className="md:w-[1300px] md:h-[700px] rounded-2xl nd:object-cover"
           />
-          <div className="absolute top-10 left-10 flex flex-col justify-center items-start pl-24"> <h2 className="text-red-500 text-2xl font-semibold">Super Delicious</h2>
-          <h1 className="text-6xl font-extrabold text-white">Burger</h1></div>
-          <div className="absolute top-10 right-10 bg-red-500 text-white rounded-lg px-6 py-4 text-center">
+          <div className="absolute top-10 left-10 flex flex-col md:justify-center items-start md:pl-24"> <h2 className="text-red-500 text-2xl font-semibold">Super Delicious</h2>
+          <h1 className="md:text-6xl font-extrabold text-white">Burger</h1></div>
+          <div className="absolute  md:top-10 right-10 md:mt-0 mt-[-233px] bg-red-500 text-white rounded-lg px-2 md:px-6 md:py-4 text-center">
             <p className="text-sm">up to</p>
-            <h3 className="text-3xl font-bold">50% OFF</h3>
+            <h3 className="md:text-3xl text-sm md:font-bold">50% OFF</h3>
           </div>
         </div>
       </div>
      <section className="px-20 py-24 bg-white text-black">
   <div className="text-center mb-12">
-    <p className="text-red-500 font-semibold tracking-widest mb-2">── ABOUT US ──</p>
-    <h2 className="text-4xl font-bold leading-snug">
+    <p className="text-red-500 font-semibold  mb-2">── ABOUT US ──</p>
+    <h2 className="text-4xl font-bold ">
       The best burgers offer a <br /> combination of tastes.
     </h2>
   </div>
@@ -183,8 +183,8 @@ export default function Home() {
    
   </div>
 </section>
-<section className="bg-black flex justify-center items-center gap-10 py-16">
-  <div className="relative w-[500px] h-[250px] rounded-3xl ">
+<section className="bg-black flex md:flex-row flex-col justify-center items-center gap-10 py-16  md:px-0 px-5 ">
+  <div className="relative md:w-[500px] w-[400px] h-[250px] rounded-3xl ">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F1.jpg&w=1920&q=75"
       className="absolute inset-0 w-full h-full object-cover object-center rounded-3xl "
@@ -196,11 +196,11 @@ export default function Home() {
       <button className="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-red-600 hover:text-white">
         Accept This Deal
       </button>
-      <div className="absolute top-5 right-8 text-xl font-bold">$35.00</div>
+      <div className="absolute top-5 right-8 text-xl md:mt-0 mt-3 font-bold">$35.00</div>
     </div>
   </div>
 
-  <div className="relative w-[500px] h-[250px] rounded-3xl ">
+  <div className="relative md:w-[500px] w-[400px] h-[250px] rounded-3xl ">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F2.jpg&w=1920&q=75"
       className="absolute inset-0 w-full h-full object-cover "
@@ -229,7 +229,7 @@ export default function Home() {
 <section className="py-20 px-12 items-center  bg-white text-center">
   <p className="text-red-500 font-semibold  mb-2">── POPULAR MENU ──</p>
   <h2 className="text-4xl font-bold mb-12">Latest Food Items</h2>
-<div className=" flex justify-center items-center bg-white">
+<div className=" flex md:flex-row flex-col justify-center items-center bg-white">
       <div className="flex flex-col gap-6   ">
         {Ldish.map((item) => (
           <LMenuCard
@@ -260,22 +260,22 @@ export default function Home() {
   </section> 
 
   <section>
-      <div className="bg-black h-[700px] w-full flex   font-bold text-white ">
-    <div className="flex flex-row items-center">
-        <div className="flex flex-col w-[800px] ml-20">
-          <div className="italic font-light text-4xl mb-5">Super Combo Offer</div>
-            <div className="font-bold text-7xl text-gray-50 w-[500px] ">Burger and sea fish curry combo</div>
-            <div className="text-gray-300 font-normal mt-5 w-[500px] ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</div>
-              <div className="bg-red-500 w-[200px] h-[60px] rounded-[50px] flex justify-center items-center text-white font-bold text-xl mt-10 cursor-pointer hover:bg-amber-600 ">Accept the Deal</div>    
+      <div className="bg-black md:h-[700px] h-[1000px] w-full flex md:flex-row flex-col   font-bold text-white ">
+    <div className="flex md:flex-row flex-col items-center">
+        <div className="flex flex-col w-[400px] md:w-[800px] md:ml-20">
+          <div className="italic font-light text-2xl md:text-4xl mb-5 mt-5">Super Combo Offer</div>
+            <div className="font-bold md:text-7xl text-4xl text-gray-50 md:w-[500px] ">Burger and sea fish curry combo</div>
+            <div className="text-gray-300 font-normal mt-5 md:w-[500px] ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</div>
+              <div className="bg-red-500 md:w-[200px] w-[150px] h-[34px] md:h-[60px] rounded-[50px] flex justify-center items-center text-white font-bold md:text-xl mt-10 cursor-pointer hover:bg-amber-600 ">Accept the Deal</div>    
         </div>
-        <div className="flex  flex-col">
-          <div className="w-[190px] h-[170px] bg-red-500 rounded-[100px] flex mb-[-100px] text-4xl text-amber-100">
-          <p className="text-black  font-light line-through mt-15 ml-4">$80</p>
-<p className="text-white font-bold mt-15 ml-2">$50</p>
+        <div className="flex  flex-col mt-10 md:mt-0">
+          <div className="w-[190px] h-[170px] bg-red-500 rounded-[100px] flex mb-[-90px] md:mb-[-100px] md:ml-0 ml-30 text-4xl text-amber-100">
+          <p className="text-black  font-light line-through mt-12 md:mt-15 ml-7 md:ml-4">$80</p>
+<p className="text-white font-bold mt-12 md:mt-15 ml-2">$50</p>
 
           </div>
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F12.jpg&w=1920&q=75" className="w-[450px] h-[450px]  rounded-full ml-10"/>
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F13.png&w=1080&q=75" className="w-[200px] h-[200px] ml-80 mt-[-150px]"/>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F12.jpg&w=1920&q=75" className="md:w-[450px] md:h-[450px]  rounded-full md:p-0 p-5 md:ml-10"/>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F13.png&w=1080&q=75" className="md:w-[200px] md:h-[200px] w-[150px] md:ml-80 ml-60 mt-[-100px] md:mt-[-150px]"/>
 </div></div>
   </div>
   </section>
@@ -374,7 +374,7 @@ export default function Home() {
     ))}
   </div>
 </section > 
-<section className="px-20 border-b-2 border-gray-500">
+<section className="md:px-20 md:border-b-2  md:border-gray-500  ">
   <Aboutus/>
 </section>
 <section className="w-full text-white">

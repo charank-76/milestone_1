@@ -7,10 +7,10 @@ export default function Navbar(){
        
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"
-            className="w-20 h-10 object-center"
+            className="w-20 h-10 object-center md:ml-0 ml-[130px] "
           />
        
-        <ul className="hidden md:flex items-center gap-13 text-md font-bold">
+        <ul className="hidden md:block flex items-center gap-13 text-md font-bold">
           <li className="hover:text-red-500 cursor-pointer "
           onClick={(e)=>{router.push("/")}}>Home</li>
           
@@ -23,7 +23,7 @@ export default function Navbar(){
           <li className="hover:text-red-500 cursor-pointer "
           onClick={(e)=>{router.push("/shop")}}>Shop</li>
         </ul>
-        <button className="bg-red-500 hover:bg-white hover:text-black text-white px-6 py-2 rounded-full font-semibold ">
+        <button className="bg-red-500 hover:bg-white hover:text-black text-white hidden md:block px-6 py-2 rounded-full font-semibold ">
           Reservation
         </button>
       </nav>
