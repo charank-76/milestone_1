@@ -62,7 +62,7 @@ export default function Main() {
               <button
                 type="submit"
                 className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4 dark:hover:bg-white dark:hover:text-black"
-                 onClick={(e)=>{router.push("/app")}}
+                 onClick={(e)=>{router.push("/login")}}
               >
                 REGISTER
               </button>
