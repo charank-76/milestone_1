@@ -13,11 +13,9 @@ export default function Navbar(){
         <ul className="hidden md:flex items-center gap-13 text-md font-bold">
           <li className="hover:text-red-500 cursor-pointer "
           onClick={(e)=>{router.push("/")}}>Home</li>
-          <li >
-            <select className="bg-black text-white ml-2 hover:text-red-500 cursor-pointer ">
-              <option >Pages</option>
-              <option value="login" onChange={(e)=>{router.push("/login")}}>Login</option></select>
-          </li>
+          
+            <li className="hover:text-red-500 cursor-pointer "
+          onClick={(e)=>{router.push("/register")}}>Register</li>  
           <li className="hover:text-red-500 cursor-pointer " 
            onClick={(e)=>{router.push("/menu")}}>Menu</li>
           <li className="hover:text-red-500 cursor-pointer"

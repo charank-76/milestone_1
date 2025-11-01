@@ -1,8 +1,10 @@
 "use client";
 
 import Navbar from "../components/Navbar";
+import { useRouter } from "next/navigation";
 
 export default function Main() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-black text-white">
      <Navbar/>
@@ -49,13 +51,15 @@ export default function Main() {
                 placeholder="Password*"
                 className=" placeholder-black border bg-gray-300  px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
+               </form>
               <button
                 type="submit"
-                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black"
+                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4"
+                 onClick={(e)=>{router.push("/")}}
               >
                 LOGIN
               </button>
-            </form>
+           
 
             <div className="text-center my-6 text-black">Or Login With</div>
 

@@ -1,26 +1,13 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+import Navbar from "../components/Navbar";
+
 export default function Main() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-black text-white">
-      <nav className="w-full flex items-center justify-between px-12 py-5 bg-black text-white fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
-        <div className="flex items-center gap-3 text-2xl font-bold tracking-wide">
-          <img
-            src="https://i.pinimg.com/474x/49/7e/0d/497e0de8271fcdb949654b0e3a2739bd.jpg"
-            className="w-10 h-10 rounded-full object-cover"
-          />
-        </div>
-        <ul className="hidden md:flex items-center gap-10 text-base font-medium">
-          <li>Home</li>
-          <li>Pages</li>
-          <li>Menu</li>
-          <li>Blog</li>
-          <li>Shop</li>
-        </ul>
-        <button className="border border-white hover:bg-white px-6 py-2 rounded-md font-semibold hover:text-black transition-all duration-300">
-          Reservation
-        </button>
-      </nav>
+      <Navbar/>
 
       <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
         <div
@@ -50,7 +37,7 @@ export default function Main() {
               <span className="text-yellow-700">CREATE AN ACCOUNT </span> BACK
             </h2>
             <p className="text-gray-500 text-center mb-8">
-             Enter your details ato create a new account
+             Enter your details to create a new account
             </p>
 
             <form className="flex flex-col gap-4">
@@ -68,14 +55,15 @@ export default function Main() {
                 type="password"
                 placeholder=" Confirm-Password*"
                 className=" placeholder-black border bg-gray-300  px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
+              /></form>
               <button
                 type="submit"
-                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black"
+                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4"
+                 onClick={(e)=>{router.push("/login")}}
               >
                 LOGIN
               </button>
-            </form>
+            
 
             <div className="text-center my-6 text-black">Or Register With</div>
 
