@@ -3,12 +3,12 @@
 export default function Customer() {
     return (
 
-        <div className="w-full items-center justify-center bg-gray-200 md:px-[100px] md:py-[60px] md:h-[700px] font-medium pb-5 pt-5 md:pb-0 md:pt-0">
+        <div className="w-full items-center justify-center dark:bg-black bg-gray-200 md:px-[100px] md:py-[60px] md:h-[700px] font-medium pb-5 pt-5 md:pb-0 md:pt-0">
       <p className="text-amber-600 text-[20px] md:pt-4 ml-30 md:text-[25px] md:ml-[500px] mb-[8px]  font-semibold  ">
           Happy Customers
         </p>
 
-        <h1 className="md:text-[40px] text-[30px] font-bold md:ml-[380px] ml-20 mb-[50px] text-black ">
+        <h1 className="md:text-[40px] text-[30px] font-bold md:ml-[380px] ml-20 mb-[50px] dark:text-white text-black ">
           Our Customers Feedback
         </h1>
 
@@ -48,10 +48,10 @@ export default function Customer() {
 
         <div className="flex items-center gap-8  mb-[10px]  text-[30px] text-amber-500">
           <p>⭐⭐⭐⭐⭐</p>
-          <span className="text-[16px] text-amber-950 font-semibold">(5/5)</span>
+          <span className="text-[16px] text-red-500 font-semibold">(5/5)</span>
         </div>
 
-        <h2 className="text-[35px] font-semibold text-gray-900 mb-[15px]">
+        <h2 className="text-[35px] font-semibold dark:text-blue-500 text-gray-900 mb-[15px]">
           The best food ever
         </h2>
 
@@ -62,7 +62,7 @@ export default function Customer() {
         </p>
 
         <div>
-          <h3 className="text-[22px] font-semibold text-black">
+          <h3 className="text-[22px] font-semibold dark:text-white text-black">
             Matthew J. Wyman
           </h3>
           <p className="text-[20px] text-amber-600 font-medium">
