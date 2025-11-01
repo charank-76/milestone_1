@@ -2,6 +2,9 @@
 import Navbar from "./components/Navbar";
 import PMenuCard from "./components/PMenuCard";
 import LMenuCard from "./components/LMenuCard";
+import Customer from "./components/Customer";
+import Aboutus from "./components/Aboutus";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const PMenu=[
@@ -184,7 +187,7 @@ export default function Home() {
   <div className="relative w-[500px] h-[250px] rounded-3xl ">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F1.jpg&w=1920&q=75"
-      className="absolute inset-0 w-full h-full object-cover object-center"
+      className="absolute inset-0 w-full h-full object-cover object-center rounded-3xl "
     />
     <div className="absolute inset-0 bg-red-900"></div>
     <div className="relative z-10 text-white flex flex-col justify-center items-start h-full px-8 space-y-3">
@@ -217,7 +220,71 @@ export default function Home() {
   </div>
 </section>
 
-  <section className="py-20 px-16 bg-white text-black text-center">
+ 
+
+
+
+
+
+<section className="py-20 px-12 items-center  bg-white text-center">
+  <p className="text-red-500 font-semibold  mb-2">── POPULAR MENU ──</p>
+  <h2 className="text-4xl font-bold mb-12">Latest Food Items</h2>
+<div className=" flex justify-center items-center bg-white">
+      <div className="flex flex-col gap-6   ">
+        {Ldish.map((item) => (
+          <LMenuCard
+            key={item.name}
+             imgurl={item.imgurl}
+            name={item.name}
+            desc={item.desc}
+            sugg={item.sugg}
+            price={item.price}
+           
+          />
+        ))}
+      </div>
+       <div className="flex flex-col gap-6   ">
+        {Lmdish.map((item) => (
+          <LMenuCard
+            key={item.name}
+             imgurl={item.imgurl}
+            name={item.name}
+            desc={item.desc}
+            sugg={item.sugg}
+            price={item.price}
+           
+          />
+        ))}
+      </div>
+    </div>
+  </section> 
+
+  <section>
+      <div className="bg-black h-[700px] w-full flex   font-bold text-white ">
+    <div className="flex flex-row items-center">
+        <div className="flex flex-col w-[800px] ml-20">
+          <div className="italic font-light text-4xl mb-5">Super Combo Offer</div>
+            <div className="font-bold text-7xl text-gray-50 w-[500px] ">Burger and sea fish curry combo</div>
+            <div className="text-gray-300 font-normal mt-5 w-[500px] ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</div>
+              <div className="bg-red-500 w-[200px] h-[60px] rounded-[50px] flex justify-center items-center text-white font-bold text-xl mt-10 cursor-pointer hover:bg-amber-600 ">Accept the Deal</div>    
+        </div>
+        <div className="flex  flex-col">
+          <div className="w-[190px] h-[170px] bg-red-500 rounded-[100px] flex mb-[-100px] text-4xl text-amber-100">
+          <p className="text-black  font-light line-through mt-15 ml-4">$80</p>
+<p className="text-white font-bold mt-15 ml-2">$50</p>
+
+          </div>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F12.jpg&w=1920&q=75" className="w-[450px] h-[450px]  rounded-full ml-10"/>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F13.png&w=1080&q=75" className="w-[200px] h-[200px] ml-80 mt-[-150px]"/>
+</div></div>
+  </div>
+  </section>
+
+  <section>
+    <Customer/>
+  </section>
+  
+   <section className="py-20 px-16 bg-white text-black text-center">
   <p className="text-red-500 font-semibold tracking-widest mb-2">── NEWS & BLOG ──</p>
   <h2 className="text-4xl font-bold mb-12">Our Latest News & Blog</h2>
 
@@ -260,7 +327,15 @@ export default function Home() {
       </div>
     ))}
   </div>
+</section > 
+<section className="px-20 border-b-2 border-gray-500">
+  <Aboutus/>
 </section>
+<section className="w-full text-white">
+  <Footer/>
+
+</section>
+
 
 
 
@@ -345,6 +420,8 @@ export default function Home() {
 
   
    </div>
+
+  
   );
 }
 

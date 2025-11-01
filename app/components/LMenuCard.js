@@ -7,8 +7,8 @@ export default function LMenuCard({imgurl,name,desc,sugg,price}) {
                
                 <img
                     src={imgurl}
-                    className="w-[120px] h-[120px] mt-2 object-center rounded-full"/>
-                    <div className="flex flex-col text-sm w-[300px] h-[100px] text-md font-light text-gray-500 mt-5 ml-1">
+                    className="w-[120px] h-[120px] ml-8 mt-2 object-center rounded-full"/>
+                    <div className="flex flex-col text-sm w-[300px] h-[100px] text-md font-light text-gray-500 mt-5 ml-[-10px]">
                         <p className="text-3xl font-sans-b text-black">{name}</p>
                         <p className="mt-2"> Ricotta / goat cheese / beetroot</p>
                         <p>{desc}</p>

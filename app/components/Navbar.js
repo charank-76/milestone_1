@@ -20,7 +20,8 @@ export default function Navbar(){
           </li>
           <li className="hover:text-red-500 cursor-pointer " 
            onClick={(e)=>{router.push("/menu")}}>Menu</li>
-          <li className="hover:text-red-500 cursor-pointer">Blog</li>
+          <li className="hover:text-red-500 cursor-pointer"
+           onClick={(e)=>{router.push("/blog")}}>Blog</li>
           <li className="hover:text-red-500 cursor-pointer "
           onClick={(e)=>{router.push("/shop")}}>Shop</li>
         </ul>

@@ -1,28 +1,13 @@
 "use client";
 
+import Navbar from "../components/Navbar";
+
 export default function Main() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <nav className="w-full flex items-center justify-between px-12 py-5 bg-black text-white fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
-        <div className="flex items-center gap-3 text-2xl font-bold tracking-wide">
-          <img
-            src="https://i.pinimg.com/474x/49/7e/0d/497e0de8271fcdb949654b0e3a2739bd.jpg"
-            className="w-10 h-10 rounded-full object-cover"
-          />
-        </div>
-        <ul className="hidden md:flex items-center gap-10 text-base font-medium">
-          <li>Home</li>
-          <li>Pages</li>
-          <li>Menu</li>
-          <li>Blog</li>
-          <li>Shop</li>
-        </ul>
-        <button className="border border-white hover:bg-white px-6 py-2 rounded-md font-semibold hover:text-black transition-all duration-300">
-          Reservation
-        </button>
-      </nav>
+     <Navbar/>
 
-      <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
+      <div className="relative w-full h-[400px] flex flex-col items-center justify-center text-center  mt-[90px]">
         <div
           className="absolute inset-0 bg-cover bg-center brightness-60"
           style={{
