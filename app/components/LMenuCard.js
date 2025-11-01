@@ -13,7 +13,7 @@ export default function LMenuCard({imgurl,name,desc,sugg,price}) {
                         <p className="mt-2"> Ricotta / goat cheese / beetroot</p>
                         <p>{desc}</p>
                     </div>
-                    <div className="w-[90px] rounded-[5px] h-[30px] bg-red-600 text-white font-bold ml-25 md:ml-1 md:mr-5 mt-5 px-2 py-1">{sugg}</div>
+                    <div className="w-[90px] rounded-[5px] h-[30px] hover:bg-white hover:text-black bg-red-600 text-white font-bold ml-25 md:ml-1 md:mr-5 mt-5 px-2 py-1">{sugg}</div>
                     
                     <div className="text-3xl pr-2 font-bold dark:text-white text-black mt-10 p-1 md:ml-15">${price}</div>
             </div>
