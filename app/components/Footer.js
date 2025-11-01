@@ -3,7 +3,7 @@
 function Footer() {
   return(
    
-    <div className="w-full md:h-[250px] bg-stone-700 flex md:flex-row flex-col gap-x-200 pb-5">
+    <div className="w-full md:h-[250px] dark:bg-black bg-stone-700 flex md:flex-row flex-col gap-x-200 pb-5">
         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" alt="Logo" className="w-[150px] rounded- h-[50px] ml-32 md:ml-25 mt-20 md:mt-35 "/>
 
 

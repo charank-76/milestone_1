@@ -78,7 +78,7 @@ export default function Home() {
     }
   ];
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen dark:text-white dark:bg-black bg-white text-black">
    <Navbar/>
 
       <div className="flex items-center justify-between md:px-20  pt-32">
@@ -89,17 +89,17 @@ export default function Home() {
             className="md:w-[1300px] md:h-[700px] rounded-2xl nd:object-cover"
           />
           <div className="absolute top-10 left-10 flex flex-col md:justify-center items-start md:pl-24"> <h2 className="text-red-500 text-2xl font-semibold">Super Delicious</h2>
-          <h1 className="md:text-6xl font-extrabold text-white">Burger</h1></div>
+          <h1 className="md:text-6xl font-extrabold dark:text-white text-white">Burger</h1></div>
           <div className="absolute  md:top-10 right-10 md:mt-0 mt-[-233px] bg-red-500 text-white rounded-lg px-2 md:px-6 md:py-4 text-center">
             <p className="text-sm">up to</p>
             <h3 className="md:text-3xl text-sm md:font-bold">50% OFF</h3>
           </div>
         </div>
       </div>
-     <section className="px-20 py-24 bg-white text-black">
+     <section className="px-20 py-24 dark:text-white dark:bg-black bg-white text-black">
   <div className="text-center mb-12">
     <p className="text-red-500 font-semibold  mb-2">── ABOUT US ──</p>
-    <h2 className="text-4xl font-bold ">
+    <h2 className=" dark:text-white text-4xl font-bold ">
       The best burgers offer a <br /> combination of tastes.
     </h2>
   </div>
@@ -113,7 +113,7 @@ export default function Home() {
       <div className="flex flex-col justify-between w-1/2 gap-6">
         <div className="bg-red-500 text-white rounded-2xl flex flex-col justify-center items-center p-10 h-[300px]">
           <h3 className="text-6xl font-bold">18+</h3>
-          <p className="text-lg mt-4 font-medium">Types Of Burger</p>
+          <p className="  dark:text-white text-lg mt-4 font-medium">Types Of Burger</p>
         </div>
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F10.jpg&w=1200&q=75"
@@ -123,7 +123,7 @@ export default function Home() {
     </div>
 
     <div className="flex-1 flex flex-col justify-center gap-8">
-      <p className="text-gray-700">
+      <p className=" dark:text-white text-gray-700">
         New had happen unable uneasy. Drawings can followed improved out sociable not.
         Earnestly so do instantly pretended. See general few civilly amiable pleased
         account carried. Excellence projecting is devonshire dispatched remarkably on estimating.
@@ -137,8 +137,8 @@ export default function Home() {
             />
           </div>
           <div>
-            <h4 className="text-xl font-semibold">Online Food Delivery</h4>
-            <p className="text-gray-600">
+            <h4 className=" dark:text-white text-xl font-semibold">Online Food Delivery</h4>
+            <p className=" dark:text-white text-gray-600">
               Excellence projecting is devonshire dispatched remarkably on estimating.
             </p>
           </div>
@@ -153,8 +153,8 @@ export default function Home() {
           </div>
           </div>
           <div>
-            <h4 className="text-xl font-semibold">Authentic Food</h4>
-            <p className="text-gray-600">
+            <h4 className=" dark:text-white text-xl font-semibold">Authentic Food</h4>
+            <p className=" dark:text-white text-gray-600">
               Regularity projecting is devonshire dispatched remarkably on estimating.
             </p>
           </div>
@@ -163,9 +163,9 @@ export default function Home() {
     </div>
   </div>
 </section>
-<section className="py-20 px-12 bg-gray-200 text-black text-center">
+<section className="py-20 px-12 dark:text-white dark:bg-black bg-gray-200 text-black text-center">
   <p className="text-red-500 font-semibold tracking-widest mb-2">── OUR SPECIAL ──</p>
-  <h2 className="text-4xl font-bold mb-12">Popular Burger</h2>
+  <h2 className=" dark:text-white text-4xl font-bold mb-12">Popular Burger</h2>
 
   <div className="flex justify-center gap-10 flex-wrap">
     {PMenu.map((element) =>{
@@ -191,9 +191,9 @@ export default function Home() {
     />
     <div className="absolute inset-0 bg-red-900"></div>
     <div className="relative z-10 text-white flex flex-col justify-center items-start h-full px-8 space-y-3">
-      <p className="italic text-lg">Eat Sleep And</p>
-      <h2 className="text-4xl font-bold ">DREAM<br />BURGER</h2>
-      <button className="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-red-600 hover:text-white">
+      <p className=" dark:text-white italic text-lg">Eat Sleep And</p>
+      <h2 className=" dark:text-white text-4xl font-bold ">DREAM<br />BURGER</h2>
+      <button className=" dark:text-white dark:bg-black bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-red-600 hover:text-white">
         Accept This Deal
       </button>
       <div className="absolute top-5 right-8 text-xl md:mt-0 mt-3 font-bold">$35.00</div>
@@ -211,8 +211,8 @@ export default function Home() {
       <div className="text-sm">OFF</div>
     </div>
     <div className="relative z-10 text-white flex flex-col justify-center items-start h-full px-8 space-y-3">
-      <p className="italic text-lg">Best deal ever</p>
-      <h2 className="text-4xl font-bold ">LUGER<br />BURGER</h2>
+      <p className=" dark:text-white italic text-lg">Best deal ever</p>
+      <h2 className=" dark:text-white text-4xl font-bold ">LUGER<br />BURGER</h2>
       <button className="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-white hover:text-black">
         Accept This Deal
       </button>
@@ -226,10 +226,10 @@ export default function Home() {
 
 
 
-<section className="py-20 px-12 items-center  bg-white text-center">
+<section className="py-20 px-12 items-center dark:bg-black  bg-white text-center">
   <p className="text-red-500 font-semibold  mb-2">── POPULAR MENU ──</p>
-  <h2 className="text-4xl font-bold mb-12">Latest Food Items</h2>
-<div className=" flex md:flex-row flex-col justify-center items-center bg-white">
+  <h2 className=" dark:text-white text-4xl font-bold mb-12">Latest Food Items</h2>
+<div className=" dark:bg-black flex md:flex-row flex-col justify-center items-center bg-white">
       <div className="flex flex-col gap-6   ">
         {Ldish.map((item) => (
           <LMenuCard
@@ -263,14 +263,14 @@ export default function Home() {
       <div className="bg-black md:h-[700px] h-[1000px] w-full flex md:flex-row flex-col   font-bold text-white ">
     <div className="flex md:flex-row flex-col items-center">
         <div className="flex flex-col w-[400px] md:w-[800px] md:ml-20">
-          <div className="italic font-light text-2xl md:text-4xl mb-5 mt-5">Super Combo Offer</div>
-            <div className="font-bold md:text-7xl text-4xl text-gray-50 md:w-[500px] ">Burger and sea fish curry combo</div>
-            <div className="text-gray-300 font-normal mt-5 md:w-[500px] ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</div>
+          <div className=" dark:text-white italic font-light text-2xl md:text-4xl mb-5 mt-5">Super Combo Offer</div>
+            <div className=" dark:text-white font-bold md:text-7xl text-4xl text-gray-50 md:w-[500px] ">Burger and sea fish curry combo</div>
+            <div className="text-gray-300  dark:text-white font-normal mt-5 md:w-[500px] ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</div>
               <div className="bg-red-500 md:w-[200px] w-[150px] h-[34px] md:h-[60px] rounded-[50px] flex justify-center items-center text-white font-bold md:text-xl mt-10 cursor-pointer hover:bg-amber-600 ">Accept the Deal</div>    
         </div>
         <div className="flex  flex-col mt-10 md:mt-0">
           <div className="w-[190px] h-[170px] bg-red-500 rounded-[100px] flex mb-[-90px] md:mb-[-100px] md:ml-0 ml-30 text-4xl text-amber-100">
-          <p className="text-black  font-light line-through mt-12 md:mt-15 ml-7 md:ml-4">$80</p>
+          <p className="text-black  dark:text-white font-light line-through mt-12 md:mt-15 ml-7 md:ml-4">$80</p>
 <p className="text-white font-bold mt-12 md:mt-15 ml-2">$50</p>
 
           </div>
@@ -282,7 +282,7 @@ export default function Home() {
 
 
 
-  <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 bg-white text-black">
+  <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white dark:bg-black bg-white text-black">
 
   <div className="w-full flex justify-center">
     <div className="w-[90%] h-[400px] rounded-xl overflow-hidden">
@@ -295,33 +295,33 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-2xl p-10 mt-10 lg:mt-0 lg:ml-10">
-    <h2 className="text-3xl font-semibold mb-4">Opening Hours</h2>
-    <p className="text-gray-500 mb-8">
+  <div className="w-full lg:w-1/2 dark:bg-black bg-white shadow-xl rounded-2xl p-10 mt-10 lg:mt-0 lg:ml-10">
+    <h2 className="  dark:text-white text-3xl font-semibold mb-4">Opening Hours</h2>
+    <p className=" dark:text-white text-gray-500 mb-8">
       A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails.
       The Patio Time Bar opens in the center.
     </p>
 
     <div className="space-y-4">
       <div className="flex justify-between border-b border-gray-200 pb-2">
-        <span className="font-medium">Sunday To Tuesday:</span>
-        <span className="text-gray-700">10:00 - 09:00</span>
+        <span className="font-medium  dark:text-white">Sunday To Tuesday:</span>
+        <span className="text-gray-700  dark:text-white">10:00 - 09:00</span>
       </div>
       <div className="flex justify-between border-b border-gray-200 pb-2">
-        <span className="font-medium">Wednesday To Thursday:</span>
-        <span className="text-gray-700">11:30 - 10:30</span>
+        <span className="font-medium  dark:text-white">Wednesday To Thursday:</span>
+        <span className="text-gray-700  dark:text-white">11:30 - 10:30</span>
       </div>
       <div className="flex justify-between border-b border-gray-200 pb-2">
-        <span className="font-medium">Friday & Saturday:</span>
-        <span className="text-gray-700">10:30 - 12:00</span>
+        <span className="font-medium  dark:text-white">Friday & Saturday:</span>
+        <span className="text-gray-700  dark:text-white">10:30 - 12:00</span>
       </div>
     </div>
 
     <div className="flex items-center gap-4 mt-8">
       <div className="bg-red-600 text-white p-4 rounded-full"></div>
       <div>
-        <p className="text-gray-500 text-sm">Call Anytime</p>
-        <p className="text-xl font-semibold">+964733-378901</p>
+        <p className="text-gray-500 text-sm  dark:text-white">Call Anytime</p>
+        <p className="text-xl font-semibold  dark:text-white">+964733-378901</p>
       </div>
     </div>
   </div>
@@ -330,9 +330,9 @@ export default function Home() {
     <Customer/>
   </section>
   
-   <section className="py-20 px-16 bg-white text-black text-center">
+   <section className="py-20 px-16 dark:text-white dark:bg-black bg-white text-black text-center">
   <p className="text-red-500 font-semibold tracking-widest mb-2">── NEWS & BLOG ──</p>
-  <h2 className="text-4xl font-bold mb-12">Our Latest News & Blog</h2>
+  <h2 className="text-4xl font-bold mb-12  dark:text-white">Our Latest News & Blog</h2>
 
   <div className="flex justify-center gap-10 flex-wrap">
     {[
@@ -353,7 +353,7 @@ export default function Home() {
     ].map((item, index) => (
       <div
         key={index}
-        className="bg-white shadow-lg rounded-xl  w-[450px] relative"
+        className="bg-white dark:bg-black shadow-lg rounded-xl  w-[450px] relative"
       >
         <div className="relative">
           <img src={item.img} className="w-full h-[280px] object-cover" />
@@ -364,10 +364,10 @@ export default function Home() {
         </div>
 
         <div className="p-6 text-left">
-          <p className="text-gray-600 text-sm mb-2">
-            BY <span className="font-semibold text-black">MD SOHAG</span> <span className="text-red-600">•</span> BURGER, FOOD
+          <p className="  dark:text-yellow-300 text-gray-600 text-sm mb-2">
+            BY <span className="font-semibold dark:text-yellow-300 text-black">MD SOHAG</span> <span className="text-red-600">•</span> BURGER, FOOD
           </p>
-          <h3 className="text-xl font-bold hover:text-red-600">{item.title}</h3><br/>
+          <h3 className="  dark:text-white text-xl font-bold hover:text-red-600">{item.title}</h3><br/>
             <h3 className="text-xl font-bold text-red-600">{item.link}</h3>
         </div>
       </div>
