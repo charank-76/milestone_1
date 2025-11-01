@@ -154,17 +154,17 @@ export default function MenuPage() {
 
  return(<div className="bg-white w-full min-h-screen flex flex-col items-center  ">
   <Navbar/>
-  <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex justify-center items-center mb-10 font-bold text-white ">
-    <div className="flex flex-col items-center">
-<h1 className="text-4xl">Food Menu</h1>
+  <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex brightness-70 justify-center items-center mb-10 font-bold text-white ">
+    <div className="flex flex-col brightness-200 items-center">
+<h1 className="text-4xl brightness-100 mt-10">Food Menu</h1>
 <div className="flex">
-<h3 className="hover:text-red-500 cursor-pointer" 
+<h3 className="hover:text-red-500 cursor-pointer brightness-100" 
 onClick={(e)=>{router.push("/")}}>home</h3>
 <h3>/food menu</h3>
 </div></div>
   </div>
     <div className="flex flex-row mb-10 mt-10">
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[600px] h-[700px] rounded-[50px]"/>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[620px] h-[700px] ml-[-70px] rounded-[50px]"/>
        <div  className="w-[200px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-120px] flex flex-col text-amber-100 ">
         <h1 className="font-bold text-5xl ml-[30px] mt-[25px]">Menu</h1>
         <h1 className="font-bold text-4xl ml-[20px] mt-[20px]">Breakfast</h1>
@@ -186,7 +186,7 @@ onClick={(e)=>{router.push("/")}}>home</h3>
     )}</div>
     </div>
 
-     <div className="flex flex-row mb-10 ml-[-480px] mt-12">
+     <div className="flex flex-row mb-10 ml-[-500px] mt-12">
             <div className="flex flex-col gap-6 mr-[80px] mt-10">
         {Ldish.map((element) =>{
             return(
@@ -203,8 +203,8 @@ onClick={(e)=>{router.push("/")}}>home</h3>
         }
     )}</div>
     
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[600px] h-[700px] rounded-[50px]"/>
-       <div  className="w-[190px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-680px] flex flex-col text-amber-100 ">
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[620px] h-[700px] rounded-[50px]"/>
+       <div  className="w-[190px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-700px] flex flex-col text-amber-100 ">
         <h1 className="font-bold text-5xl ml-[30px] mt-[25px]">Menu</h1>
         <h1 className="font-bold text-4xl ml-[35px] mt-[20px]">Lunch</h1>
        </div>
@@ -297,20 +297,20 @@ onClick={(e)=>{router.push("/")}}>home</h3>
             </div>
         <div></div>
         </div>
-<div className="flex flex-col">
+
   
   <div className="px-20 border-b-2 border-gray-500 ">
     <Aboutus />
   </div>
 
-  {/* Footer Section */}
+ 
   <div className="w-full  ">
     <Footer />
   </div>
 </div>
 
 
-    </div>
+ 
    
  )
 }
