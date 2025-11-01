@@ -280,6 +280,52 @@ export default function Home() {
   </div>
   </section>
 
+
+
+  <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 bg-white text-black">
+
+  <div className="w-full flex justify-center">
+    <div className="w-[90%] h-[400px] rounded-xl overflow-hidden">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"
+        title="YouTube video player"
+        allow="autoplay; encrypted-media"
+      ></iframe>
+    </div>
+  </div>
+
+  <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-2xl p-10 mt-10 lg:mt-0 lg:ml-10">
+    <h2 className="text-3xl font-semibold mb-4">Opening Hours</h2>
+    <p className="text-gray-500 mb-8">
+      A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails.
+      The Patio Time Bar opens in the center.
+    </p>
+
+    <div className="space-y-4">
+      <div className="flex justify-between border-b border-gray-200 pb-2">
+        <span className="font-medium">Sunday To Tuesday:</span>
+        <span className="text-gray-700">10:00 - 09:00</span>
+      </div>
+      <div className="flex justify-between border-b border-gray-200 pb-2">
+        <span className="font-medium">Wednesday To Thursday:</span>
+        <span className="text-gray-700">11:30 - 10:30</span>
+      </div>
+      <div className="flex justify-between border-b border-gray-200 pb-2">
+        <span className="font-medium">Friday & Saturday:</span>
+        <span className="text-gray-700">10:30 - 12:00</span>
+      </div>
+    </div>
+
+    <div className="flex items-center gap-4 mt-8">
+      <div className="bg-red-600 text-white p-4 rounded-full"></div>
+      <div>
+        <p className="text-gray-500 text-sm">Call Anytime</p>
+        <p className="text-xl font-semibold">+964733-378901</p>
+      </div>
+    </div>
+  </div>
+</section>
   <section>
     <Customer/>
   </section>
@@ -338,83 +384,6 @@ export default function Home() {
 
 
 
-
-
-
-<section>
-<div className=" flex justify-center items-center bg-white">
-      <div className="flex flex-col gap-6   ">
-        {Ldish.map((item) => (
-          <LMenuCard
-            key={item.name}
-             imgurl={item.imgurl}
-            name={item.name}
-            desc={item.desc}
-            sugg={item.sugg}
-            price={item.price}
-           
-          />
-        ))}
-      </div>
-       <div className="flex flex-col gap-6   ">
-        {Lmdish.map((item) => (
-          <LMenuCard
-            key={item.name}
-             imgurl={item.imgurl}
-            name={item.name}
-            desc={item.desc}
-            sugg={item.sugg}
-            price={item.price}
-           
-          />
-        ))}
-      </div>
-    </div>
-  </section> 
-  <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 bg-white text-black">
-
-  <div className="w-full flex justify-center">
-    <div className="w-[90%] h-[400px] rounded-xl overflow-hidden">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"
-        title="YouTube video player"
-        allow="autoplay; encrypted-media"
-      ></iframe>
-    </div>
-  </div>
-
-  <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-2xl p-10 mt-10 lg:mt-0 lg:ml-10">
-    <h2 className="text-3xl font-semibold mb-4">Opening Hours</h2>
-    <p className="text-gray-500 mb-8">
-      A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails.
-      The Patio Time Bar opens in the center.
-    </p>
-
-    <div className="space-y-4">
-      <div className="flex justify-between border-b border-gray-200 pb-2">
-        <span className="font-medium">Sunday To Tuesday:</span>
-        <span className="text-gray-700">10:00 - 09:00</span>
-      </div>
-      <div className="flex justify-between border-b border-gray-200 pb-2">
-        <span className="font-medium">Wednesday To Thursday:</span>
-        <span className="text-gray-700">11:30 - 10:30</span>
-      </div>
-      <div className="flex justify-between border-b border-gray-200 pb-2">
-        <span className="font-medium">Friday & Saturday:</span>
-        <span className="text-gray-700">10:30 - 12:00</span>
-      </div>
-    </div>
-
-    <div className="flex items-center gap-4 mt-8">
-      <div className="bg-red-600 text-white p-4 rounded-full"></div>
-      <div>
-        <p className="text-gray-500 text-sm">Call Anytime</p>
-        <p className="text-xl font-semibold">+964733-378901</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
