@@ -2,7 +2,7 @@
 export default function PMenuCard({imgurl,name,price}) {
     return(
 
-    <div className="flex flex-col items-center hover:bg-white p-6 rounded-3xl w-[250px]">
+    <div className="flex flex-col items-center  hover:bg-white dark:hover:bg-gray-500 p-6 rounded-3xl w-[250px]">
       <img
         src={imgurl}
         className="w-[180px] h-[160px] object-contain mb-4"
@@ -14,7 +14,7 @@ export default function PMenuCard({imgurl,name,price}) {
          ${price}
         </div>
       </div>
-      <p className=" dark:text-white text-gray-600 text-sm">
+      <p className="  dark:text-gray-300 text-sm">
         The hamburger is the original and the best-known burger to date
       </p>
     </div>

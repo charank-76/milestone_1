@@ -26,9 +26,9 @@ export default function Blog() {
             author: " john Baus"
         }]
   return (
-    <div className="bg-white w-full min-h-screen flex flex-col items-center  ">
+    <div className="bg-white dark:bg-stone-900 w-full min-h-screen flex flex-col items-center   ">
         <Navbar />
-         <div className="flex flex-col  mt-20 ">
+         <div className="flex flex-col  mt-20 md:px-0 px-4 ">
                 {blogs.map((element) =>{
                     return(
                         <BlogList
@@ -50,7 +50,7 @@ export default function Blog() {
                  <button className="bg-gray-300 text-black px-4 py-2 rounded-md hover:bg-black hover:text-white ">➜</button>
 
             </div>
-<div className="px-20 border-b-2 border-gray-500"><Aboutus /></div>
+<div className="md:px-20  md:border-b-2 md:border-gray-500"><Aboutus /></div>
 
         <Footer  />
         </div>

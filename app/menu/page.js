@@ -152,9 +152,9 @@ export default function MenuPage() {
   
  ]
 
- return(<div className="bg-white w-full min-h-screen flex flex-col items-center  ">
+ return(<div className="bg-white dark:bg-stone-900 w-full min-h-screen flex flex-col md:items-center  ">
   <Navbar/>
-  <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex brightness-70 justify-center items-center mb-10 font-bold text-white ">
+  <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex brightness-70 justify-center items-center md:mb-10 font-bold text-white ">
     <div className="flex flex-col brightness-200 items-center">
 <h1 className="text-4xl brightness-100 mt-10">Food Menu</h1>
 <div className="flex">
@@ -163,9 +163,9 @@ onClick={(e)=>{router.push("/")}}>home</h3>
 <h3>/food menu</h3>
 </div></div>
   </div>
-    <div className="flex flex-row mb-10 mt-10">
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[620px] h-[700px] ml-[-70px] rounded-[50px]"/>
-       <div  className="w-[200px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-120px] flex flex-col text-amber-100 ">
+    <div className="flex md:flex-row flex-col mb-10 mt-10">
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px] h-[300px] md:ml-[-70px] rounded-[30px] md:rounded-[50px] p-2 md:p-0"/>
+       <div  className="hidden w-[200px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] md:ml-[-120px] md:flex flex-col text-amber-100 ">
         <h1 className="font-bold text-5xl ml-[30px] mt-[25px]">Menu</h1>
         <h1 className="font-bold text-4xl ml-[20px] mt-[20px]">Breakfast</h1>
        </div>
@@ -186,8 +186,9 @@ onClick={(e)=>{router.push("/")}}>home</h3>
     )}</div>
     </div>
 
-     <div className="flex flex-row mb-10 ml-[-500px] mt-12">
-            <div className="flex flex-col gap-6 mr-[80px] mt-10">
+     <div className="flex md:flex-row flex-col mb-10 md:gap-0 gap-8 md:ml-[-500px] mt-12">
+     
+            <div className="flex flex-col gap-6 md:mr-[80px] mt-10">
         {Ldish.map((element) =>{
             return(
                 <MenuCard
@@ -203,17 +204,30 @@ onClick={(e)=>{router.push("/")}}>home</h3>
         }
     )}</div>
     
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="w-[620px] h-[700px] rounded-[50px]"/>
-       <div  className="w-[190px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-700px] flex flex-col text-amber-100 ">
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px]  h-[300px] rounded-[30px] md:rounded-[50px]"/>
+       <div  className="hidden w-[190px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-700px] md:flex flex-col text-amber-100 ">
         <h1 className="font-bold text-5xl ml-[30px] mt-[25px]">Menu</h1>
         <h1 className="font-bold text-4xl ml-[35px] mt-[20px]">Lunch</h1>
        </div>
  
     </div>
-    <div className="flex flex-row mb-10 gap-2 mt-2">
-            <div className="flex flex-col gap-6 mt-10 border-r-2 border-gray-500 p-4">
-               <p className="text-4xl font-serif text-stone-600 ml-[200px]">--Fresh from ocean--</p>
-              <p className="text-5xl font-serif text-black ml-[280px]">Sea Food</p>
+
+     <div className="bg-black md:h-[500px] h-[700px] w-full flex md:flex-row flex-col  font-bold text-white ">
+    <div className="flex md:flex-row flex-col items-center">
+        <div className="flex flex-col md:w-[800px] md:ml-20">
+            <div className="font-bold md:text-7xl md:p-0 p-4 text-4xl text-gray-50 md:w-[400px] ">30 Minutes Delivery!</div>
+            <div className="text-gray-300 font-normal md:p-0 p-4 mt-5 md:w-[500px] md:mt-0 mt-[-10px]">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</div>
+              <div className="bg-amber-800 md:w-[200px] w-[120px] md:h-[60px] h-[40px] rounded-lg flex justify-center items-center text-white font-bold md:text-2xl md:mt-10 mt-2 md:p-0 md:ml-0 ml-4 cursor-pointer hover:bg-amber-600 ">Order Now</div>    
+        </div>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F11.png&w=1920&q=75" className="md:w-[400px] md:h-[400px] w-[300px] md:mt-0 mt-10 md:rounded-[50px] ml-10"/>
+</div>
+  </div>
+
+
+    <div className="flex md:flex-row flex-col mb-10 gap-2 mt-2">
+            <div className="flex flex-col gap-6 md:mt-10 md:border-r-2 md:border-gray-500 p-4">
+               <p className="md:text-4xl font-serif text-stone-600 md:ml-[200px] text-[25px] ml-22 dark:text-gray-200">--Fresh from ocean--</p>
+              <p className="text-5xl font-serif text-black md:ml-[280px] ml-27 md:mt-0 mt-[-10px] dark:text-white">Sea Food</p>
         {Sdish.map((element) =>{
             return(
                 <MenuCard
@@ -230,8 +244,8 @@ onClick={(e)=>{router.push("/")}}>home</h3>
     )}</div>
     
          <div className="flex flex-col gap-6  mt-12 p-2">
-          <p className="text-4xl font-serif text-stone-600 ml-[220px]">--Drinks & Wine--</p>
-              <p className="text-5xl font-serif text-black ml-[280px]">Beverage</p>
+          <p className="md:text-4xl text-[25px] font-serif text-stone-600 md:ml-[220px] ml-25 dark:text-gray-200">--Drinks & Wine--</p>
+              <p className="text-5xl font-serif text-black md:ml-[280px] ml-27 md:mt-0 mt-[-10px] dark:text-white">Beverage</p>
         {Bedish.map((element) =>{
             return(
                 <MenuCard
@@ -252,39 +266,30 @@ onClick={(e)=>{router.push("/")}}>home</h3>
 
 
 
-    <div className="bg-black h-[500px] w-full flex   font-bold text-white ">
-    <div className="flex flex-row items-center">
-        <div className="flex flex-col w-[800px] ml-20">
-            <div className="font-bold text-7xl text-gray-50 w-[400px] ">30 Minutes Delivery!</div>
-            <div className="text-gray-300 font-normal mt-5 w-[500px] ">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</div>
-              <div className="bg-amber-800 w-[200px] h-[60px] rounded-lg flex justify-center items-center text-white font-bold text-2xl mt-10 cursor-pointer hover:bg-amber-600 ">Order Now</div>    
-        </div>
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F11.png&w=1920&q=75" className="w-[400px] h-[400px] rounded-[50px] ml-10"/>
-</div>
-  </div>
+    
 
 
 
 <Customer />
      
 
-      <div className="bg-blue-950 h-[500px] w-full flex text-white mb-25 ">
-        <div className="w-1/2 font-sans flex flex-col ml-[100px]  mt-[80px]">
-        <p className="text-2xl font-serif mb-[17px] ">RESERVATION ---</p>
-        <p className="w-[670px] font-serif text-5xl  mb-[25px]">Reservation Your Favorite Private Table</p>
-        <p className="w-[670px] font-normal text-[18px]">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting</p>
-        <div className="flex gap-8">
+      <div className="bg-blue-950 md:h-[500px] h-[1100px] w-full flex md:flex-row flex-col text-white md:mb-25 ">
+        <div className="md:w-1/2 font-sans flex flex-col md:ml-[100px] ml-4  mt-5 md:mt-[80px]">
+        <p className="md:text-2xl text-xl font-serif mb-[17px] ">RESERVATION ---</p>
+        <p className="md:w-[670px] font-serif md:text-5xl text-3xl mb-[25px]">Reservation Your Favorite Private Table</p>
+        <p className="md:w-[670px] md:pr-0 pr-6 font-normal md:text-[18px]">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting</p>
+        <div className="flex md:flex-row flex-col md:gap-8">
           <div className="flex flex-col gap-2 border-r mt-[30px] border-gray-500">
             <p className="font-serif text-3xl pr-8">Launch Menu</p>
-            <p className="font-normal text-[20px]">30+ Items</p>
+            <p className="font-normal text-[20px] text-gray-300">30+ Items</p>
 </div>
              <div className="flex flex-col gap-2 mt-[30px]">
             <p className="font-serif text-3xl pr-8">Dinner Menu</p>
-            <p className="font-normal text-[20px]">50+ Items</p>
+            <p className="font-normal text-[20px] text-gray-300">50+ Items</p>
           </div>
         </div>
         </div>
-            <div className="w-[500px] h-[500px] p-10 font-normal flex flex-col ml-[50px] bg-gray-900 rounded-[50px] border-2 border-gray-500  mt-[80px]">
+            <div className="md:w-[500px] h-[500px] md:p-10 font-normal flex flex-col md:ml-[50px] p-6 bg-gray-900 rounded-[50px] border-2 border-gray-500  mt-[80px]">
               <p>Phone</p>
               <input type="text" placeholder="Your Phone Number"  className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3 "/>
               <p>Date</p>
@@ -299,12 +304,12 @@ onClick={(e)=>{router.push("/")}}>home</h3>
         </div>
 
   
-  <div className="px-20 border-b-2 border-gray-500 ">
+  <div className="md:px-20 md:border-b-2 md:border-gray-500 ">
     <Aboutus />
   </div>
 
  
-  <div className="w-full  ">
+  <div className="w-full text-white ">
     <Footer />
   </div>
 </div>

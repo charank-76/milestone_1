@@ -78,10 +78,10 @@ export default function Home() {
     }
   ];
   return (
-    <div className="min-h-screen dark:text-white dark:bg-black bg-white text-black">
+    <div className="min-h-screen dark:text-white dark:bg-stone-900 bg-white text-black">
    <Navbar/>
 
-      <div className="flex items-center justify-between md:px-20  pt-32">
+      <div className="flex items-center justify-between md:px-20  pt-30">
         <div className="flex flex-col gap-4"></div>
         <div className="relative">
           <img
@@ -96,22 +96,22 @@ export default function Home() {
           </div>
         </div>
       </div>
-     <section className="px-20 py-24 dark:text-white dark:bg-black bg-white text-black">
+     <section className="md:px-20 px-8 py-24 dark:text-white dark:bg-stone-900 bg-white text-black">
   <div className="text-center mb-12">
     <p className="text-red-500 font-semibold  mb-2">── ABOUT US ──</p>
-    <h2 className=" dark:text-white text-4xl font-bold ">
+    <h2 className=" dark:text-white md:text-4xl text-3xl font-bold ">
       The best burgers offer a <br /> combination of tastes.
     </h2>
   </div>
 
-  <div className="flex flex-col lg:flex-row gap-10">
-    <div className="flex-1 flex gap-6">
+  <div className="flex flex-col md:flex-row gap-10">
+    <div className=" flex md:flex-row flex-col gap-6">
       <img
         src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F11.jpg&w=1200&q=75"
-        className="rounded-2xl w-1/2 h-[620px] object-cover"
+        className="rounded-2xl md:w-1/2 md:h-[620px] object-cover"
       />
-      <div className="flex flex-col justify-between w-1/2 gap-6">
-        <div className="bg-red-500 text-white rounded-2xl flex flex-col justify-center items-center p-10 h-[300px]">
+      <div className="flex flex-col justify-between md:w-1/2 gap-6">
+        <div className="bg-red-500 text-white rounded-2xl flex flex-col justify-center items-center p-10 md:h-[300px]">
           <h3 className="text-6xl font-bold">18+</h3>
           <p className="  dark:text-white text-lg mt-4 font-medium">Types Of Burger</p>
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
         <div className="border rounded-2xl p-6 flex items-start gap-4 shadow-sm">
           <div className="bg-black text-white w-12 h-12 flex items-center justify-center rounded-full text-xl">
             <img
-            src="https://thumbs.dreamstime.com/b/delivery-service-icon-logo-dark-background-white-delivery-service-icon-logo-dark-background-132225950.jpg"
+            src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F21.png&w=640&q=75" className="w-full m-10"
             />
           </div>
           <div>
@@ -148,7 +148,8 @@ export default function Home() {
           <div className="bg-black text-white w-12 h-12 flex items-center justify-center rounded-full text-xl">
             <div className="bg-black text-white w-12 h-12 flex items-center justify-center rounded-full text-xl">
             <img
-            src="https://www.shutterstock.com/image-illustration/white-burger-on-black-background-600w-1069527875.jpg"
+            src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F22.png&w=640&q=75"
+            className="w-full m-10"
             />
           </div>
           </div>
@@ -163,9 +164,9 @@ export default function Home() {
     </div>
   </div>
 </section>
-<section className="py-20 px-12 dark:text-white dark:bg-black bg-gray-200 text-black text-center">
+<section className="py-20 px-12 dark:text-white dark:bg-stone-800 bg-gray-200 text-black text-center">
   <p className="text-red-500 font-semibold tracking-widest mb-2">── OUR SPECIAL ──</p>
-  <h2 className=" dark:text-white text-4xl font-bold mb-12">Popular Burger</h2>
+  <h2 className="  text-4xl font-bold mb-12">Popular Burger</h2>
 
   <div className="flex justify-center gap-10 flex-wrap">
     {PMenu.map((element) =>{
@@ -183,7 +184,7 @@ export default function Home() {
    
   </div>
 </section>
-<section className="bg-black flex md:flex-row flex-col justify-center items-center gap-10 py-16  md:px-0 px-5 ">
+<section className="bg-stone-900 flex md:flex-row flex-col justify-center items-center gap-10 py-16  md:px-0 px-5 ">
   <div className="relative md:w-[500px] w-[400px] h-[250px] rounded-3xl ">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F1.jpg&w=1920&q=75"
@@ -226,10 +227,10 @@ export default function Home() {
 
 
 
-<section className="py-20 px-12 items-center dark:bg-black  bg-white text-center">
+<section className="py-20 px-12 items-center dark:bg-stone-900  bg-white text-center">
   <p className="text-red-500 font-semibold  mb-2">── POPULAR MENU ──</p>
   <h2 className=" dark:text-white text-4xl font-bold mb-12">Latest Food Items</h2>
-<div className=" dark:bg-black flex md:flex-row flex-col justify-center items-center bg-white">
+<div className=" dark:bg-stone-900 flex md:flex-row flex-col justify-center items-center bg-white">
       <div className="flex flex-col gap-6   ">
         {Ldish.map((item) => (
           <LMenuCard
@@ -282,7 +283,7 @@ export default function Home() {
 
 
 
-  <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white dark:bg-black bg-white text-black">
+  <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white dark:bg-stone-900 bg-white text-black">
 
   <div className="w-full flex justify-center">
     <div className="w-[90%] h-[400px] rounded-xl overflow-hidden">
@@ -295,7 +296,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="w-full lg:w-1/2 dark:bg-black bg-white shadow-xl rounded-2xl p-10 mt-10 lg:mt-0 lg:ml-10">
+  <div className="w-full md:w-1/2 dark:bg-stone-900 bg-white shadow-xl shadow-gray-500 border border-gray-600 rounded-2xl p-10 mt-10 md:mt-[-100px] md:ml-[-100px]">
     <h2 className="  dark:text-white text-3xl font-semibold mb-4">Opening Hours</h2>
     <p className=" dark:text-white text-gray-500 mb-8">
       A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails.
@@ -330,7 +331,7 @@ export default function Home() {
     <Customer/>
   </section>
   
-   <section className="py-20 px-16 dark:text-white dark:bg-black bg-white text-black text-center">
+   <section className="py-20 px-16 dark:text-white dark:bg-stone-900 bg-white text-black text-center">
   <p className="text-red-500 font-semibold tracking-widest mb-2">── NEWS & BLOG ──</p>
   <h2 className="text-4xl font-bold mb-12  dark:text-white">Our Latest News & Blog</h2>
 
@@ -353,7 +354,7 @@ export default function Home() {
     ].map((item, index) => (
       <div
         key={index}
-        className="bg-white dark:bg-black shadow-lg rounded-xl  w-[450px] relative"
+        className="bg-white dark:bg-stone-800 shadow-lg rounded-xl  w-[450px] relative"
       >
         <div className="relative">
           <img src={item.img} className="w-full h-[280px] object-cover" />

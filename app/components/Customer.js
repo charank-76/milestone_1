@@ -3,7 +3,7 @@
 export default function Customer() {
     return (
 
-        <div className="w-full items-center justify-center dark:bg-black bg-gray-200 md:px-[100px] md:py-[60px] md:h-[700px] font-medium pb-5 pt-5 md:pb-0 md:pt-0">
+        <div className="w-full items-center justify-center dark:bg-stone-800 bg-gray-200 md:px-[100px] md:py-[60px] md:h-[700px] font-medium pb-5 pt-5 md:pb-0 md:pt-0">
       <p className="text-amber-600 text-[20px] md:pt-4 ml-30 md:text-[25px] md:ml-[500px] mb-[8px]  font-semibold  ">
           Happy Customers
         </p>
@@ -21,7 +21,7 @@ export default function Customer() {
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F4.jpg&w=640&q=75"
           alt="Main"
-          className="w-[400px] h-[450px] rounded-[30px] object-cover md:p-0  shadow-2xl shadow-gray-600"
+          className="w-[400px] h-[450px] rounded-[30px] object-cover md:p-0 md:mt-0 mt-[-30px] shadow-2xl shadow-gray-600"
         />
 
        
@@ -55,7 +55,7 @@ export default function Customer() {
           The best food ever
         </h2>
 
-        <p className="text-amber-800 md:text-[20px] md:px-0 px-2 mb-[30px]">
+        <p className="text-amber-800 md:text-[20px] dark:text-white md:px-0 px-2 mb-[30px]">
           “Targeting consultation discover apartments. Indulgence off under folly
           death wrote cause her way spite. Plan upon yet way get cold spot its week.
           Almost do am or limits hearts. Resolve parties but why she shewing.”

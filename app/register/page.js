@@ -27,7 +27,7 @@ export default function Main() {
       </div>
 
       <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6 dark:bg-black">
-        <div className="w-full max-w-5xl dark:bg-black bg-white rounded-2xl shadow-2xl overflow-hidden flex">
+        <div className="w-full max-w-5xl dark:bg-stone-800 shadow-lg shadow-gray-500 bg-white rounded-2xl shadow-2xl overflow-hidden flex">
           <div className="w-1/2 relative hidden md:block">
             <img
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F14.jpg&w=3840&q=75"
@@ -88,7 +88,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-       <section className="px-20 border-b-2 border-gray-500">
+       <section className="md:px-20 md:border-b-2 md:border-gray-500">
   <Aboutus/>
 </section>
 <section className="w-full text-white">

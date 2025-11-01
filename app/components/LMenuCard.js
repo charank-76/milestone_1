@@ -3,7 +3,7 @@
 export default function LMenuCard({imgurl,name,desc,sugg,price}) {
     return (
        
-            <div className="dark:bg-black flex md:flex-row flex-col border border-gray-300 bg-white p-2 rounded-lg shadow-md  ">
+            <div className="dark:bg-stone-900 flex md:flex-row flex-col border border-gray-300 dark:border-gray-600 bg-white p-2 rounded-lg shadow-md shadow-gray-700  dark:text-white  hover:scale-105  ">
                
                 <img
                     src={imgurl}
