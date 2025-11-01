@@ -10,7 +10,7 @@ export default function Navbar(){
             className="w-20 h-10 object-center md:ml-0 ml-[130px] "
           />
        
-        <ul className="hidden md:block flex items-center gap-13 text-md font-bold">
+        <ul className="hidden md:flex flex-row items-center gap-13 text-md font-bold">
           <li className="hover:text-red-500 cursor-pointer "
           onClick={(e)=>{router.push("/")}}>Home</li>
           
