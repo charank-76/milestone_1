@@ -40,9 +40,9 @@ export default function Navbar(){
             <h1 className="hidden md:block">Shop</h1>
           </div> 
         </div>
-        <button className="bg-red-500 hover:bg-white hover:text-black text-white hidden md:block px-6 py-2 rounded-full font-semibold "
+        <button className="bg-red-500 hover:bg-white hover:text-black text-white md:px-6 md:py-2 md:mr-0 mr-[-30px] md:flex rounded-full font-semibold "
           onClick={(e)=>{router.push("/reservation")}}>
-           
+           <h1>☎️</h1>
             <h1 className="hidden md:block">Reservation</h1>
          
         </button>

@@ -6,7 +6,7 @@ import {useRouter} from "next/navigation";
 
 import {useState} from 'react'
 import Footer from "../components/Footer";
-import Customer1 from "../components/Customer";
+
 import Navbar from "../components/Navbar";
 
 export default function MenuPage() {
