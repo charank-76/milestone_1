@@ -1,5 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
+
 import Navbar from "../components/Navbar";
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
@@ -8,6 +11,10 @@ import Footer from "../components/Footer";
 
 export default function Main() {
   const router = useRouter();
+  const { register } = useAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [cnfmpass, setcnfmpass] = useState("");
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar/>
@@ -48,24 +55,48 @@ export default function Main() {
                 type="email"
                 placeholder="Email*"
                 className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  px-4 py-3  text-black border border-blue-400"
+                onChange={(e)=>{
+                  setEmail(e.target.value)
+                }}
               />
               <input
                 type="password"
                 placeholder="Password*"
                 className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  text-black px-4 py-3 border border-blue-400"
+                onChange={(e)=>{
+                  setPassword(e.target.value)
+                }}                
               />
                <input
                 type="password"
                 placeholder=" Confirm-Password*"
                 className="dark: placeholder-black border text-black bg-white placeholder-black border text-black bg-gray-300  px-4 py-3 border border-blue-400"
+                 onChange={(e)=>{
+                  setcnfmpass(e.target.value)
+                }} 
               /></form>
-              <button
-                type="submit"
-                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4 dark:hover:bg-white dark:hover:text-black"
-                 onClick={(e)=>{router.push("/login")}}
-              >
-                REGISTER
-              </button>
+            <button
+  type="button"
+  className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4 dark:hover:bg-white dark:hover:text-black"
+  onClick={(e) => {
+    
+
+    if (password === cnfmpass && email !== "") {
+      console.log(email);
+      console.log(password);
+      console.log(cnfmpass);
+
+      register(email, password, cnfmpass);
+      router.push("/login"); 
+    } else {
+      console.log("Login Failed! Invalid credentials.");
+      alert("Invalid email or password. Please try again.");
+    }
+  }}
+>
+  REGISTER
+</button>
+
             
 
             <div className="text-center my-6 text-xl font-semibold text-black dark: text-white">Or Register With</div>

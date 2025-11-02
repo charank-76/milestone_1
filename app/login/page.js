@@ -1,11 +1,20 @@
 "use client";
 import Navbar from "../components/Navbar";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
+
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
 
 export default function Main() {
+  const [remail,setRemail] = useState("")
+   const [rpassword, setRpassword] = useState("");
+   const { login } = useAuth()
   const router = useRouter();
+  const {email, password} = useAuth()
+  let pass=password;
+  let mail=email;
   return (
     <div className="min-h-screen dark:bg-black bg-white text-white">
      <Navbar/>
@@ -46,17 +55,34 @@ export default function Main() {
                 type="email"
                 placeholder="Email*"
                 className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300 text-black px-4 py-3 border border-blue-400"
+                onChange={(e)=>{
+                  setRemail(e.target.value)
+                }}
               />
               <input
                 type="password"
                 placeholder="Password*"
                 className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300 text-black px-4 py-3 border border-blue-400"
-              />
+               onChange={(e)=>{
+                  setRpassword(e.target.value)}}
+             />
                </form>
               <button
                 type="submit"
                 className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4  dark:hover:bg-white dark:hover:text-black"
-                 onClick={(e)=>{router.push("/")}}
+                 onClick={(e)=>{
+                  if (rpassword == pass && remail == mail) {
+      console.log(remail);
+      console.log(rpassword);
+     
+
+      login(remail,rpassword)
+      router.push("/"); 
+    } else {
+      console.log("Login Failed! Invalid credentials.");
+      alert("Invalid email or password. Please try again.");
+    }
+                 }}
               >
                 LOGIN
               </button>
