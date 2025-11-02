@@ -286,7 +286,7 @@ export default function Home() {
   <section className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white dark:bg-stone-900 bg-white text-black">
 
   <div className="w-full flex justify-center">
-    <div className="w-[90%] h-[400px] rounded-xl overflow-hidden">
+    <div className="w-[90%] h-[400px] rounded-xl ">
       <iframe
         className="w-full h-full"
         src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"
