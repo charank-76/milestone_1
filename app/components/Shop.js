@@ -13,7 +13,7 @@ function Shop({ image, category, name, price }) {
         <p className="text-sm text-gray-500 ">{category}</p>
         <h3 className="font-semibold hover:text-yellow-600 text-black text-lg">{name}</h3>
          <div className="flex items-center justify-center gap-2 mt-1"></div>
-         <span className="text-lg font-semibold text-[#6c4b26]">${price}</span>
+         <div className="text-lg font-semibold text-[#6c4b26]">${price}</div>
         </div>
       <button className="border border-yellow-600 rounded-full text-black px-4 py-2 mt-4 hover:bg-yellow-700 hover:text-white ">
         ADD TO CART
