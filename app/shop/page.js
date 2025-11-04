@@ -37,6 +37,24 @@ export default function Menu() {
       name: "Vegetable Roll",
       price: 25,
     },
+    {
+      image: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75",
+      category: "PASTA,SPICY",
+      name: "Creamy Pasta",
+      price:18 ,
+    },
+     {
+      image: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75",
+      category: "MEAT,SHAWARMA",
+      name: "Chicken Shawarma",
+      price:3 ,
+    },
+    {
+      image: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75",
+      category: "SANDWICH,CHICKEN",
+      name: "Submarine Sandwich",
+      price:3 ,
+    },
   ];
 
   return (
