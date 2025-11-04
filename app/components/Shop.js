@@ -5,7 +5,7 @@ function Shop({ image, category, name, price }) {
   const router = useRouter();
 
   return (
-    <div className="bg-white shadow-lg rounded-2xl w-[250px] flex flex-col items-center justify-between p-5">
+    <div className="dark:bg-black bg-white shadow-lg rounded-2xl w-[250px] flex flex-col items-center justify-between p-5">
       <div className="relative">
         <span className="absolute top-0 left-0 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-br-lg">
           SALE!
@@ -14,15 +14,15 @@ function Shop({ image, category, name, price }) {
       </div>
 
       <div className="text-center mt-3">
-        <p className="text-sm text-gray-500">{category}</p>
-        <h3 className="font-semibold hover:text-yellow-600 text-black text-lg">
+        <p className=" dark:text-white text-sm text-gray-500">{category}</p>
+        <h3 className=" dark:text-white font-semibold hover:text-yellow-600 text-black text-lg">
           {name}
         </h3>
-        <div className="text-lg font-semibold text-[#6c4b26]">${price}</div>
+        <div className="text-lg dark:text-yellow-400 hover:text-yellow-600 font-semibold text-[#6c4b26]">${price}</div>
       </div>
 
       <button
-        className="border border-yellow-600 rounded-full text-black px-4 py-2 mt-4 hover:bg-yellow-700 hover:text-white"
+        className=" dark:text-white border border-yellow-600 rounded-full text-black px-4 py-2 mt-4 hover:bg-yellow-700 hover:text-white"
         onClick={() => {
           alert(`${name} added to cart!`);
           router.push("/cart");

@@ -71,11 +71,11 @@ export default function Menu() {
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10">
-          <h1 className="text-5xl font-bold mb-4">Special Food</h1>
+          <h1 className=" hover:text-yellow-300 text-5xl font-bold mb-4">Special Food</h1>
         </div>
       </div>
 
-      <div className="flex justify-center gap-10 flex-wrap p-10 bg-white">
+      <div className=" dark:bg-stone-900 flex justify-center gap-10 flex-wrap p-10 bg-white">
         {foodItems.map((element, index) => (
           <Shop
             key={index}
