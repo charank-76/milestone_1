@@ -29,7 +29,7 @@ export default function Main() {
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10">
-          <h1 className="text-5xl font-bold mb-4">Login Page</h1>
+          <h1 className="text-5xl font-bold mb-4 hover:text-amber-300">Login Page</h1>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export default function Main() {
                </form>
               <button
                 type="submit"
-                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4  dark:hover:bg-white dark:hover:text-black"
+                className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4  dark:hover:bg-amber-100 dark:hover:text-black"
                  onClick={(e)=>{
                   if (rpassword == pass && remail == mail) {
       console.log(remail);

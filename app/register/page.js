@@ -29,7 +29,7 @@ export default function Main() {
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10">
-          <h1 className="text-5xl font-bold mb-4">Register Page</h1>
+          <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4">Register Page</h1>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export default function Main() {
               <input
                 type="email"
                 placeholder="Email*"
-                className="dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  px-4 py-3  text-black border border-blue-400"
+                className=" dark: placeholder-black border text-black bg-white placeholder-black border bg-gray-300  px-4 py-3  text-black border border-blue-400"
                 onChange={(e)=>{
                   setEmail(e.target.value)
                 }}
@@ -77,7 +77,7 @@ export default function Main() {
               /></form>
             <button
   type="button"
-  className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4 dark:hover:bg-white dark:hover:text-black"
+  className="bg-yellow-800 text-white py-3 rounded-md font-semibold  dark:hover:bg-amber-100 hover:bg-black mt-4 dark:hover:bg-white dark:hover:text-black"
   onClick={(e) => {
     
 
