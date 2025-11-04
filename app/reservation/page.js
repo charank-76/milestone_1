@@ -51,7 +51,7 @@ return(
       </section>
       <section className="md:w-[800px]  border-2 border-gray-200   mb-10 flex flex-col bg-white items-center pb-4 rounded-[30px] shadow-lg shadow-gray-500   gap-10">
         <div className="md:text-4xl font-serif text-stone-600 p-4 text-[25px]  ">---Keep in touch---</div>
-        <h1 className="md:text-5xl font-bold text-black text-[30px] mt-[-40px] ">Send us a Massage</h1>
+        <h1 className="md:text-5xl font-bold text-black text-[30px] mt-[-40px] ">Send us a Message</h1>
         <form className="flex flex-col gap-6 w-[80%]">
           <input type="text" placeholder="Your Name*" className="border bg-gray-200  border-amber-50 px-4 py-3  text-black rounded-md"/>
           <div className="flex  gap-4">

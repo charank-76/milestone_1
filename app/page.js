@@ -6,6 +6,7 @@ import Customer from "./components/Customer";
 import Aboutus from "./components/Aboutus";
 import Footer from "./components/Footer";
 import WH from "./components/wh";
+import Nav1 from "./components/Nav1";
 
 export default function Home() {
   const PMenu=[
@@ -80,7 +81,7 @@ export default function Home() {
   ];
   return (
     <div className="min-h-screen dark:text-white dark:bg-stone-900 bg-white text-black">
-   <Navbar/>
+   <Nav1/>
 
       <div className="flex items-center justify-between md:px-20  pt-30">
         <div className="flex flex-col gap-4"></div>
