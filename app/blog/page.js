@@ -27,7 +27,9 @@ export default function Blog() {
         }]
   return (
     <div className="bg-white dark:bg-stone-900 w-full min-h-screen flex flex-col items-center   ">
-        <Navbar />
+<section className="fixed inset-0 z-50">
+    <Navbar/>
+  </section>
          <div className="flex flex-col  mt-20 md:px-0 px-4 ">
                 {blogs.map((element) =>{
                     return(

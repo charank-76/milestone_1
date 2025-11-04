@@ -8,6 +8,7 @@ import {useState} from 'react'
 import Footer from "../components/Footer";
 
 import Navbar from "../components/Navbar";
+import Menu from "../shop/page";
 
 export default function MenuPage() {
   const router = useRouter();
@@ -153,7 +154,10 @@ export default function MenuPage() {
  ]
 
  return(<div className="bg-white dark:bg-stone-900 w-full min-h-screen flex flex-col md:items-center  ">
-  <Navbar/>
+  <section className="fixed top-0 left-0 right-0 z-50">
+    <Navbar/>
+  </section>
+
   <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex brightness-70 justify-center items-center md:mb-10 font-bold text-white ">
     <div className="flex flex-col brightness-200 items-center">
 <h1 className="text-4xl brightness-100 mt-10">Food Menu</h1>
@@ -164,47 +168,22 @@ onClick={(e)=>{router.push("/")}}>home</h3>
 </div></div>
   </div>
     <div className="flex md:flex-row flex-col mb-10 mt-10">
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px] h-[300px] md:ml-[-70px] rounded-[30px] md:rounded-[50px] p-2 md:p-0"/>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px] h-[300px] md:ml-0 rounded-[30px] md:rounded-[50px] p-2 md:p-0"/>
        <div  className="hidden w-[200px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] md:ml-[-120px] md:flex flex-col text-amber-100 ">
         <h1 className="font-bold text-5xl ml-[30px] mt-[25px]">Menu</h1>
         <h1 className="font-bold text-4xl ml-[20px] mt-[20px]">Breakfast</h1>
        </div>
-      <div className="flex flex-col gap-6 mt-10">
-        {Bdish.map((element) =>{
-            return(
-                <MenuCard
-              key={element.title}
-                title={element.title}
-                description={element.description}
-                hprice={element.hprice}
-                 fprice={element.fprice}
-                imageUrl={element.imageUrl}
-                desc={element.desc}
-                />      
-            )
-        }
-    )}</div>
+     <div>
+     <MenuCard items={Bdish}/>
+   </div>
     </div>
 
-     <div className="flex md:flex-row flex-col mb-10 md:gap-0 gap-8 md:ml-[-500px] mt-12">
-     
-            <div className="flex flex-col gap-6 md:mr-[80px] mt-10">
-        {Ldish.map((element) =>{
-            return(
-                <MenuCard
-              key={element.title}
-                title={element.title}
-                description={element.description}
-                hprice={element.hprice}
-                 fprice={element.fprice}
-                imageUrl={element.imageUrl}
-                desc={element.desc}
-                />      
-            )
-        }
-    )}</div>
+     <div className="flex md:flex-row flex-col mb-10 md:gap-15 gap-8  md:ml-[-500px] mt-12">
+     <div className="md:ml-[-15px]  ">
+     <MenuCard items={Ldish}/>
+   </div>
     
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px]  h-[300px] rounded-[30px] md:rounded-[50px]"/>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px] md:mr-[-50px]  h-[300px] rounded-[30px] md:rounded-[50px]"/>
        <div  className="hidden w-[190px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] ml-[-700px] md:flex flex-col text-amber-100 ">
         <h1 className="font-bold text-5xl ml-[30px] mt-[25px]">Menu</h1>
         <h1 className="font-bold text-4xl ml-[35px] mt-[20px]">Lunch</h1>
@@ -228,48 +207,18 @@ onClick={(e)=>{router.push("/")}}>home</h3>
             <div className="flex flex-col gap-6 md:mt-10 md:border-r-2 md:border-gray-500 p-4">
                <p className="md:text-4xl font-serif text-stone-600 md:ml-[200px] text-[25px] ml-22 dark:text-gray-200">--Fresh from ocean--</p>
               <p className="text-5xl font-serif text-black md:ml-[280px] ml-27 md:mt-0 mt-[-10px] dark:text-white">Sea Food</p>
-        {Sdish.map((element) =>{
-            return(
-                <MenuCard
-              key={element.title}
-                title={element.title}
-                description={element.description}
-                hprice={element.hprice}
-                 fprice={element.fprice}
-                imageUrl={element.imageUrl}
-                desc={element.desc}
-                />      
-            )
-        }
-    )}</div>
+       <div>
+     <MenuCard items={Sdish}/>
+   </div></div>
     
          <div className="flex flex-col gap-6  mt-12 p-2">
           <p className="md:text-4xl text-[25px] font-serif text-stone-600 md:ml-[220px] ml-25 dark:text-gray-200">--Drinks & Wine--</p>
               <p className="text-5xl font-serif text-black md:ml-[280px] ml-27 md:mt-0 mt-[-10px] dark:text-white">Beverage</p>
-        {Bedish.map((element) =>{
-            return(
-                <MenuCard
-              key={element.title}
-                title={element.title}
-                description={element.description}
-                hprice={element.hprice}
-                 fprice={element.fprice}
-                imageUrl={element.imageUrl}
-                desc={element.desc}
-                />      
-            )
-        }
-    )}</div>
+       <div>
+     <MenuCard items={Bedish}/>
+   </div></div>
  
     </div>
-
-
-
-
-    
-
-
-
 <Customer />
      
 
@@ -298,7 +247,7 @@ onClick={(e)=>{router.push("/")}}>home</h3>
               <input type="time" className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3 "/>
               <p>Persons</p>
               <input type="number" placeholder="Number of People" className="bg-gray-800 h-[40px] border-2 border-gray-500 rounded-md mt-2 mb-4 pl-3 "/>
-              <button className="bg-amber-600 w-[200px] h-[50px] rounded-md mt-4 text-white font-bold hover:bg-amber-400">Book A Table</button>
+              <button className="bg-amber-600 w-[200px] h-[50px] rounded-md mt-4 text-white font-bold hover:bg-amber-400" onClick={(e)=>{alert("Table Booking SuccessFull")}}>Book A Table</button>
             </div>
         <div></div>
         </div>
@@ -307,15 +256,10 @@ onClick={(e)=>{router.push("/")}}>home</h3>
   <div className="md:px-20 md:border-b-2 md:border-gray-500 ">
     <Aboutus />
   </div>
-
- 
   <div className="w-full text-white ">
     <Footer />
   </div>
 </div>
-
-
- 
    
  )
 }

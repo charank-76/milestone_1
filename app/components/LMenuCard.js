@@ -1,9 +1,10 @@
 "use client"
-
+import { useRouter } from "next/navigation";
 export default function LMenuCard({imgurl,name,desc,sugg,price}) {
+    const router = useRouter();
     return (
        
-            <div className="dark:bg-stone-900 flex md:flex-row flex-col border border-gray-300 dark:border-gray-600 bg-white p-2 rounded-lg shadow-md shadow-gray-700  dark:text-white  hover:scale-105  ">
+            <div className="dark:bg-stone-900 flex md:flex-row flex-col border border-gray-300 dark:border-gray-600 bg-white p-2 rounded-lg shadow-md shadow-gray-700  dark:text-white  hover:scale-105  "   onClick={(e)=>{router.push("/menu")}}>
                
                 <img
                     src={imgurl}

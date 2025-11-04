@@ -40,7 +40,7 @@ export default function Menu() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white dark:bg-stone-600 text-white">
       <Navbar />
 
       <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
@@ -69,7 +69,7 @@ export default function Menu() {
         ))}
       </div>
 
-      <section className="px-20 border-b-2 border-gray-500">
+      <section className="md:px-20 md:border-b-2 md:border-gray-500">
         <Aboutus />
       </section>
 

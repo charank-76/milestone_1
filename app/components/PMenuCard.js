@@ -1,8 +1,10 @@
 "use client"
+import { useRouter } from "next/navigation";
 export default function PMenuCard({imgurl,name,price}) {
+  const router = useRouter();
     return(
 
-    <div className="flex flex-col items-center  hover:bg-white dark:hover:bg-gray-500 p-6 rounded-3xl w-[250px]">
+    <div className="flex flex-col items-center  hover:bg-white cursor-pointer dark:hover:bg-gray-500 p-6 rounded-3xl w-[250px]"    onClick={(e)=>{router.push("/menu")}}>
       <img
         src={imgurl}
         className="w-[180px] h-[160px] object-contain mb-4"

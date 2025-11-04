@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 import Navbar from "./components/Navbar";
 import PMenuCard from "./components/PMenuCard";
 import LMenuCard from "./components/LMenuCard";
@@ -6,9 +7,10 @@ import Customer from "./components/Customer";
 import Aboutus from "./components/Aboutus";
 import Footer from "./components/Footer";
 import WH from "./components/wh";
-import Nav1 from "./components/Nav1";
+
 
 export default function Home() {
+  const router = useRouter();
   const PMenu=[
     {
       name:"Hamburger",
@@ -81,7 +83,9 @@ export default function Home() {
   ];
   return (
     <div className="min-h-screen dark:text-white dark:bg-stone-900 bg-white text-black">
-   <Nav1/>
+   <section className="fixed top-0 left-0 right-0 z-50">
+     <Navbar/>
+   </section>
 
       <div className="flex items-center justify-between md:px-20  pt-30">
         <div className="flex flex-col gap-4"></div>
@@ -269,7 +273,7 @@ export default function Home() {
           <div className=" dark:text-white italic font-light text-2xl md:text-4xl mb-5 mt-5">Super Combo Offer</div>
             <div className=" dark:text-white font-bold md:text-7xl text-4xl text-gray-50 md:w-[500px] ">Burger and sea fish curry combo</div>
             <div className="text-gray-300  dark:text-white font-normal mt-5 md:w-[500px] ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</div>
-              <div className="bg-red-500 md:w-[200px] w-[150px] h-[34px] md:h-[60px] rounded-[50px] flex justify-center items-center text-white font-bold md:text-xl mt-10 cursor-pointer hover:bg-amber-600 ">Accept the Deal</div>    
+              <div className="bg-red-500 md:w-[200px] w-[150px] h-[34px] md:h-[60px] rounded-[50px] flex justify-center items-center text-white font-bold md:text-xl mt-10 cursor-pointer hover:bg-amber-600 "  onClick={(e)=>{router.push("/shop")}}>Accept the Deal</div>    
         </div>
         <div className="flex  flex-col mt-10 md:mt-0">
           <div className="w-[190px] h-[170px] bg-red-500 rounded-[100px] flex mb-[-90px] md:mb-[-100px] md:ml-0 ml-30 text-4xl text-amber-100">
@@ -330,7 +334,7 @@ export default function Home() {
             BY <span className="font-semibold dark:text-yellow-300 text-black">MD SOHAG</span> <span className="text-red-600">•</span> BURGER, FOOD
           </p>
           <h3 className="  dark:text-white text-xl font-bold hover:text-red-600">{item.title}</h3><br/>
-            <h3 className="text-xl font-bold text-red-600">{item.link}</h3>
+            <h3 className="text-xl font-bold text-red-600 cursor-pointer"  onClick={(e)=>{router.push("/blog")}}>{item.link}</h3>
         </div>
       </div>
     ))}

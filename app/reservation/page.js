@@ -28,7 +28,9 @@ export default function ReservationPage() {
 return(
     
     <div className="bg-white  w-full min-h-screen flex flex-col md:items-center  ">
-      <Navbar/>
+       <section className="fixed top-0 left-0 right-0 z-50">
+    <Navbar/>
+  </section>
       <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex brightness-70 justify-center items-center md:mb-10 font-bold text-white ">
         <div className="flex flex-col brightness-200 items-center">
     <h1 className="text-4xl brightness-100 mt-10">Contact Us</h1>
