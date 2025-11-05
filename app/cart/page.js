@@ -92,4 +92,4 @@ export default function Cart() {
       </section>
     </div>
   );
-} //charan cart boda ? artha avondiji..
+} 
