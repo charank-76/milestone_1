@@ -229,7 +229,7 @@ onClick={(e)=>{router.push("/")}}>home</h3>
         <p className="md:w-[670px] md:pr-0 pr-6 font-normal md:text-[18px]">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting</p>
         <div className="flex md:flex-row flex-col md:gap-8">
           <div className="flex flex-col gap-2 border-r mt-[30px] border-gray-500">
-            <p className="font-serif text-3xl pr-8">Launch Menu</p>
+            <p className="font-serif text-3xl pr-8">Lunch Menu</p>
             <p className="font-normal text-[20px] text-gray-300">30+ Items</p>
 </div>
              <div className="flex flex-col gap-2 mt-[30px]">

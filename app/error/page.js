@@ -22,14 +22,14 @@ export default function Cart() {
           <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4">Error Page</h1>
         </div>
       </div >
-      <section class="bg-white h-screen flex flex-col items-center justify-center text-center">
-  <h1 class="text-[150px] font-bold text-black  mb-4">404</h1>
-  <h2 class="text-2xl font-semibold text-black mb-3">Sorry Page Was Not Found!</h2>
-  <p class="text-gray-600 max-w-[600px] mb-10">
+      <section className="bg-white h-screen flex flex-col items-center justify-center text-center">
+  <h1 className="text-[150px] font-bold text-black  mb-4">404</h1>
+  <h2 className="text-2xl font-semibold text-black mb-3">Sorry Page Was Not Found!</h2>
+  <p className="text-gray-600 max-w-[600px] mb-10">
     Household shameless incommode at no objection behaviour. Especially do at he possession
     insensible sympathize boisterous it. Songs he on an widen me event truth.
   </p>
-  <button class="bg-yellow-700 hover:bg-black hover:text-white text-white px-6 py-3 font-semibold rounded">
+  <button className="bg-yellow-700 hover:bg-black hover:text-white text-white px-6 py-3 font-semibold rounded">
     Back To Home
   </button>
 </section>
