@@ -3,10 +3,10 @@
 import { useRouter } from "next/navigation";
 export default function WH(){
     return(
-        <div className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white  bg-white text-black">
+        <div className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white dark:bg-stone-900 dark:text-white  bg-white text-black">
 
   <div className="w-full flex justify-center">
-    <div className="w-[90%] h-[400px] rounded-xl overflow-hidden">
+    <div className="md:w-[75%] w-[90%] h-[400px] rounded-xl overflow-hidden">
       <iframe
         className="w-full h-full"
         src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"
@@ -16,7 +16,7 @@ export default function WH(){
     </div>
   </div>
 
-  <div className="w-full md:w-1/2 dark:bg-stone-900 bg-white shadow-xl shadow-gray-500 border border-gray-600 rounded-2xl p-10 mt-10 md:mt-[-100px] md:ml-[-100px]">
+  <div className="w-full md:w-1/2 dark:bg-stone-900 bg-white shadow-xl shadow-gray-500 border border-gray-600 rounded-2xl p-10 mt-10 md:mt-[-100px] md:ml-[-200px]">
     <h2 className="  dark:text-white text-3xl font-semibold mb-4">Opening Hours</h2>
     <p className=" dark:text-white text-gray-500 mb-8">
       A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails.

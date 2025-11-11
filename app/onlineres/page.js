@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 export default function Cart() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white dark:text-white dark:bg-stone-900 ">
       <Navbar />
 
       <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
@@ -19,13 +19,13 @@ export default function Cart() {
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10">
-          <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4">Online Reservation</h1>
+          <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4 text-white">Online Reservation</h1>
         </div>
       </div >
-      <div className="flex flex-col lg:flex-row items-center justify-center px-10 py-20 dark:text-white  bg-white text-black">
+      <div className="flex flex-col lg:flex-row items-center justify-center px-5 md:px-10 py-20 dark:text-white dark:text-white dark:bg-stone-900 bg-white text-black">
 
-  <div className="w-full flex justify-center items-center bg-black text-white p-10">
-  <div className="w-[45%] h-[400px] rounded-xl overflow-hidden mr-10">
+  <div className="w-full md:flex-row flex flex-col justify-center items-center bg-white dark:text-white dark:bg-stone-900 md:p-10">
+  <div className="md:w-[45%] w-[90%] h-[400px] rounded-xl overflow-hidden md:mr-10">
     <iframe
       className="w-full h-full"
       src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"
@@ -34,20 +34,20 @@ export default function Cart() {
     ></iframe>
   </div>
 
-  <div className="w-[45%] flex flex-col">
+  <div className="md:w-[45%] w-[90%] flex flex-col shadow-md shadow-gray-200 border dark:shadow-stone-600 dark:border-stone-600 dark:text-white dark:bg-stone-800 border-gray-100 rounded-2xl p-10  ">
     <p>Phone</p>
-    <input type="text" placeholder="Your Phone Number" className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3" />
+    <input type="text" placeholder="Your Phone Number" className="dark:bg-stone-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3" />
     <p>Date</p>
-    <input type="date" className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3" />
+    <input type="date" className="dark:bg-stone-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3" />
     <p>Time</p>
-    <input type="time" className="bg-gray-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3" />
+    <input type="time" className="dark:bg-stone-800 h-[40px] rounded-md border-2 border-gray-500 mt-2 mb-4 pl-3" />
     <p>Persons</p>
-    <input type="number" placeholder="Number of People" className="bg-gray-800 h-[40px] border-2 border-gray-500 rounded-md mt-2 mb-4 pl-3" />
-    <button className="bg-amber-600 w-[200px] h-[50px] rounded-md mt-4 text-white font-bold hover:bg-amber-400" onClick={(e)=>{alert("Table Booking SuccessFull")}}>Book A Table</button>
+    <input type="number" placeholder="Number of People" className="dark:bg-stone-800 h-[40px] border-2 border-gray-500 rounded-md mt-2 mb-4 pl-3" />
+    <button className="bg-amber-600 w-[200px]  h-[50px] rounded-md mt-4 text-white font-bold hover:bg-amber-400" onClick={(e)=>{alert("Table Booking SuccessFull")}}>Book A Table</button>
   </div>
   </div>
   </div>
-<section className="px-20 border-b-2 border-gray-500">
+<section className="md:px-20 md:border-b-2 md:border-gray-500">
         <Aboutus />
       </section>
 

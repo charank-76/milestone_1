@@ -22,9 +22,9 @@ export default function Cart() {
           <h1 className="text-5xl font-bold mb-4">Cart Page</h1>
         </div>
       </div >
-       <div className=" dark:bg-black dark:text-white px-10 py-10 min-h-screen bg-white text-black flex flex-col items-center">
-  <table className="border border-gray-200 text-center mb-10">
-    <thead className="bg-gray-100 text-gray-700">
+       <div className=" dark:bg-black dark:text-white px-10 py-10 min-h-screen  bg-white text-black flex flex-col items-center">
+  <table className="border border-gray-200 text-center mb-10 w-[50%]  ">
+    <thead className="bg-gray-100 text-gray-700 ">
       <tr>
         <th className="p-4 border border-gray-200">Remove</th>
         <th className="p-4 border border-gray-200">Thumbnail</th>
@@ -83,7 +83,7 @@ export default function Cart() {
 </div>
 </div>
 
-<section className="px-20 border-b-2 border-gray-500">
+<section className="md:px-20 md:border-b-2 md:border-gray-500">
         <Aboutus />
       </section>
 

@@ -7,11 +7,11 @@ export default function Nav1(){
        
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"
-            className="w-20 h-10 object-center md:ml-7 ml-[-20px] cursor-pointer "
+            className="w-20 h-10 object-center md:ml-9 ml-[-20px] cursor-pointer "
           />
        
         <div className="flex flex-row md:items-center gap-4 md:mr-0 mr-[-20px] md:gap-15 md:ml-[300px] text-md font-bold">
-          <div className="hover:text-red-500 cursor-pointer"
+          <div className="hover:text-red-500 cursor-pointer mr-[-10px]"
           onClick={(e)=>{router.push("/")}}>
          
             <h1 className="hidden md:block">Home</h1>
@@ -21,12 +21,16 @@ export default function Nav1(){
             <option value="option1" >Pages</option>
             <option value="/login" >Login</option>
             <option value="/register" >Register</option>
+            <option value="/about" >About Us</option>
+            <option value="/chiefdet" >Chef Details</option>
+            <option value="/error" >Error Page</option>
+            <option value="/onlineres" >Reservation</option>
              </select>
 
 
 
          
-              <div className="hover:text-red-500  cursor-pointer "
+              <div className="hover:text-red-500  ml-[-30px] cursor-pointer "
           onClick={(e)=>{router.push("/menu")}}>
            
             <h1 className="hidden md:block">Menu</h1>
@@ -37,15 +41,17 @@ export default function Nav1(){
             
             <h1 className="hidden md:block">Blogs</h1>
           </div> 
-     <div className="hover:text-red-500 cursor-pointer "
-          onClick={(e)=>{router.push("/shop")}}>
+
            
-            <h1 className="hidden md:block">Shop</h1>
-          </div> 
+            <select className="text-white ml-[-10px] bg-black  dark:bg-stone-700  cursor-pointer md:flex  px-2 hover:text-red-500" onChange={(e)=>{router.push(e.target.value)}}
+          >
+            <option value="/shop" >Shop</option>
+            <option value="/cart" >Cart</option>
+           </select>
         </div>
 
         
-        <button className="bg-white hover:bg-red-500  text-white md:px-2 md:py-2 md:mr-0 mr-[-30px] md:ml-[300px]  rounded-full font-semibold "
+        <button className="bg-white hover:bg-red-500  text-white md:px-2 md:py-2 md:mr-0 mr-[-30px] md:ml-[220px]  rounded-full font-semibold "
           onClick={(e)=>{alert("Cart is empty")}}>
            
             <h1 className="hidden md:block">🛒</h1>
@@ -81,6 +87,7 @@ export default function Nav1(){
            
             <h1 >🛒</h1>
             </button>
+            
         </div>
       </nav>
 

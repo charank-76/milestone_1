@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 export default function Cart() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white dark:text-white dark:bg-stone-900 text-white">
       <Navbar />
 
       <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
@@ -22,10 +22,10 @@ export default function Cart() {
           <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4">Error Page</h1>
         </div>
       </div >
-      <section className="bg-white h-screen flex flex-col items-center justify-center text-center">
-  <h1 className="text-[150px] font-bold text-black  mb-4">404</h1>
-  <h2 className="text-2xl font-semibold text-black mb-3">Sorry Page Was Not Found!</h2>
-  <p className="text-gray-600 max-w-[600px] mb-10">
+      <section className="bg-white dark:text-white dark:bg-stone-900 h-screen flex flex-col items-center justify-center text-center">
+  <h1 className="text-[150px] font-bold text-black dark:text-white  mb-4">404</h1>
+  <h2 className="text-2xl font-semibold text-black dark:text-white mb-3">Sorry Page Was Not Found!</h2>
+  <p className="text-gray-600 dark:text-gray-300 max-w-[600px] mb-10">
     Household shameless incommode at no objection behaviour. Especially do at he possession
     insensible sympathize boisterous it. Songs he on an widen me event truth.
   </p>
@@ -34,7 +34,7 @@ export default function Cart() {
   </button>
 </section>
 
-       <section className="px-20 border-b-2 border-gray-500">
+       <section className="md:px-20 md:border-b-2 md:border-gray-500">
         <Aboutus />
       </section>
 

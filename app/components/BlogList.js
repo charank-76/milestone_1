@@ -2,7 +2,7 @@
 
 export default function BlogList({imgurl,title,date,author}) {
     return (
-        <div className="flex flex-col border dark:bg-stone-800 border-gray-300 bg-white  shadow-md shadow-gray-500 h-[800px] md:h-[850px] rounded-3xl mt-10 mb-10 md:w-[1000px]  ">
+        <div className="flex flex-col border dark:bg-stone-800 border-gray-300 dark:border-stone-600 bg-white  shadow-md shadow-gray-500 h-[800px] md:h-[850px] rounded-3xl mt-10 mb-10 md:w-[1000px]  ">
             <img
                 src={imgurl}
                 className="w-full md:h-[500px] object-cover rounded-xl"/>
