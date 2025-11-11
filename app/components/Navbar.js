@@ -46,6 +46,7 @@ export default function Nav1(){
             <select className="text-white ml-[-10px] bg-black  dark:bg-stone-700  cursor-pointer md:flex  px-2 hover:text-red-500" onChange={(e)=>{router.push(e.target.value)}}
           >
             <option value="/shop" >Shop</option>
+            <option value="/shop" >Shop</option>
             <option value="/cart" >Cart</option>
            </select>
         </div>
