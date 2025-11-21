@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 
 
 export default function Cart() {
