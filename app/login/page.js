@@ -6,6 +6,7 @@ import { useAuth } from "../contexts/AuthContext";
 
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 
 export default function Main() {
   const [remail,setRemail] = useState("")
@@ -19,19 +20,7 @@ export default function Main() {
     <div className="min-h-screen dark:bg-black bg-white text-white">
      <Navbar/>
 
-      <div className="relative w-full h-[400px] flex flex-col items-center justify-center text-center  ">
-        <div
-          className="absolute inset-0 bg-cover bg-center brightness-60"
-          style={{
-            backgroundImage:
-              "url('https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg')",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="z-10">
-          <h1 className="text-5xl font-bold mb-4 hover:text-amber-300">Login Page</h1>
-        </div>
-      </div>
+      <HeroSection name="Login"/>
 
       <div className="min-h-screen dark:bg-black bg-gray-100 flex items-center justify-center p-6">
         <div className="w-full max-w-5xl dark:bg-stone-800 shadow-lg shadow-gray-500 bg-white rounded-2xl shadow-2xl  flex">

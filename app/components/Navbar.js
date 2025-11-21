@@ -22,7 +22,7 @@ export default function Nav1(){
             <option value="/login" >Login</option>
             <option value="/register" >Register</option>
             <option value="/about" >About Us</option>
-            <option value="/chiefdet" >Chef Details</option>
+            
             <option value="/error" >Error Page</option>
             <option value="/onlineres" >Reservation</option>
              </select>
@@ -73,7 +73,10 @@ export default function Nav1(){
             <option value="/register" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Register</option>
             <option value="/shop" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Shop</option>
             <option value="/menu" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Menu</option>
-            <option value="/reservation" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Reservation</option>
+              <option value="/about" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">About Us</option>
+                <option value="/error" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Error</option>
+                  <option value="/onlineres" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Reservation</option>
+            <option value="/reservation" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Contact Us</option>
             <option value="/blog" className="border-gray-500 border-b-2 w-[50px] h-[50px] p-2 text-xl">Blog</option>
             
             

@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 
 
 export default function Cart() {
@@ -9,19 +10,7 @@ export default function Cart() {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
 
-      <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
-        <div
-          className="absolute inset-0 bg-cover bg-center brightness-60"
-          style={{
-            backgroundImage:
-              "url('https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg')",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="z-10">
-          <h1 className="text-5xl font-bold mb-4">Cart Page</h1>
-        </div>
-      </div >
+     <HeroSection name="Cart Page"/>
        <div className=" dark:bg-black dark:text-white px-10 py-10 min-h-screen  bg-white text-black flex flex-col items-center">
   <table className="border border-gray-200 text-center mb-10 w-[50%]  ">
     <thead className="bg-gray-100 text-gray-700 ">

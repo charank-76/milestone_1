@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 
 
 export default function Cart() {
@@ -9,19 +10,7 @@ export default function Cart() {
     <div className="min-h-screen bg-white dark:text-white dark:bg-stone-900 ">
       <Navbar />
 
-      <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
-        <div
-          className="absolute inset-0 bg-cover bg-center brightness-60"
-          style={{
-            backgroundImage:
-              "url('https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg')",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="z-10">
-          <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4 text-white">Online Reservation</h1>
-        </div>
-      </div >
+      <HeroSection name="Online Reservation"/>
       <div className="flex flex-col lg:flex-row items-center justify-center px-5 md:px-10 py-20 dark:text-white dark:text-white dark:bg-stone-900 bg-white text-black">
 
   <div className="w-full md:flex-row flex flex-col justify-center items-center bg-white dark:text-white dark:bg-stone-900 md:p-10">

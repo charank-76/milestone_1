@@ -8,6 +8,7 @@ import {useState} from 'react'
 import Footer from "../components/Footer";
 
 import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
 import Menu from "../shop/page";
 
 export default function MenuPage() {
@@ -158,15 +159,7 @@ export default function MenuPage() {
     <Navbar/>
   </section>
 
-  <div className="bg-[url(https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg)]  h-[300px] w-full flex brightness-70 justify-center items-center md:mb-10 font-bold text-white ">
-    <div className="flex flex-col brightness-200 items-center">
-<h1 className="text-4xl brightness-100 mt-10">Food Menu</h1>
-<div className="flex">
-<h3 className="hover:text-red-500 cursor-pointer brightness-100" 
-onClick={(e)=>{router.push("/")}}>home</h3>
-<h3>/food menu</h3>
-</div></div>
-  </div>
+  <HeroSection name="Menu Page"/>
     <div className="flex md:flex-row flex-col mb-10 mt-10">
         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbanner%2F1.jpg&w=640&q=75" className="md:w-[620px] md:h-[700px] h-[300px] md:ml-0 rounded-[30px] md:rounded-[50px] p-2 md:p-0"/>
        <div  className="hidden w-[200px] h-[170px] bg-amber-800 rounded-[100px] mt-[150px] md:ml-[-120px] md:flex flex-col text-amber-100 ">

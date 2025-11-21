@@ -31,7 +31,7 @@ export default function Customer() {
           className="w-[70px] h-[70px]  mt-[-320px] ml-[350px] mb-[50px] hidden md:block rounded-full border-4 border-white shadow-lg object-cover  "
         />
         <img
-          src="https://th.bing.com/th/id/OIP.A3rJ-nO5s3Bv2qCF2r3thAHaEK?w=208&h=117&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F7.jpg&w=640&q=75"
           alt="Customer2"
           className="w-[80px] h-[80px] mb-[25px] ml-[350px] rounded-full hidden md:block border-4 border-white shadow-lg object-cover   "
         />

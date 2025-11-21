@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Aboutus from "../components/Aboutus";
 import BlogList from "../components/BlogList";
+import HeroSection from "../components/HeroSection";
 
 export default function Blog() {
     const blogs = [
@@ -30,6 +31,9 @@ export default function Blog() {
 <section className="fixed top-0 bottom-0 left-0 z-50">
     <Navbar/>
   </section>
+
+<HeroSection name="Blogs"/>
+  
          <div className="flex flex-col  mt-20 md:px-0 px-4 ">
                 {blogs.map((element) =>{
                     return(

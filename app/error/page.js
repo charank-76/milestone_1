@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import Aboutus from "../components/Aboutus";
 import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 
 
 export default function Cart() {
@@ -9,19 +10,7 @@ export default function Cart() {
     <div className="min-h-screen bg-white dark:text-white dark:bg-stone-900 text-white">
       <Navbar />
 
-      <div className="relative w-full h-[450px] flex flex-col items-center justify-center text-center overflow-hidden mt-[90px]">
-        <div
-          className="absolute inset-0 bg-cover bg-center brightness-60"
-          style={{
-            backgroundImage:
-              "url('https://st.depositphotos.com/3063135/4654/i/450/depositphotos_46548367-stock-photo-japanese-seafood-sushi-on-black.jpg')",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="z-10">
-          <h1 className="text-5xl  hover:text-yellow-300 font-bold mb-4">Error Page</h1>
-        </div>
-      </div >
+   <HeroSection name="Error Page"/>
       <section className="bg-white dark:text-white dark:bg-stone-900 h-screen flex flex-col items-center justify-center text-center">
   <h1 className="text-[150px] font-bold text-black dark:text-white  mb-4">404</h1>
   <h2 className="text-2xl font-semibold text-black dark:text-white mb-3">Sorry Page Was Not Found!</h2>

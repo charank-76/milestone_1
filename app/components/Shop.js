@@ -1,8 +1,8 @@
 "use client";
-import { useRouter } from "next/navigation";
+
 
 function Shop({ image, category, name, price }) {
-  const router = useRouter();
+  
 
   return (
     <div className="dark:bg-black bg-white shadow-lg rounded-2xl w-[250px] flex flex-col items-center justify-between p-5">
@@ -25,7 +25,7 @@ function Shop({ image, category, name, price }) {
         className=" dark:text-white border border-yellow-600 rounded-full text-black px-4 py-2 mt-4 hover:bg-yellow-700 hover:text-white"
         onClick={() => {
           alert(`${name} added to cart!`);
-          router.push("/cart");
+        
         }}
       >
         ADD TO CART
