@@ -14,11 +14,11 @@
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="z-10">
-          <h1 className="text-6xl  hover:text-yellow-300 font-bold mb-4">{name}</h1>
-          <div className="flex px-10">
+          <h1 className="text-6xl text-white  hover:text-yellow-300 font-bold mb-4">{name}</h1>
+          <div className="flex px-10 text-white">
 <h3 className="hover:text-red-500 cursor-pointer brightness-100 ml-4 font-bold" 
 onClick={(e)=>{router.push("/")}}>home</h3>
-<h3 className="font-bold">/{name}</h3>
+<h3 className="font-bold  ">/{name}</h3>
 </div>
         </div>
       </div >
