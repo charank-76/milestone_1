@@ -9,25 +9,25 @@ import { createContext,
          
         const [email,setEmail ]= useState("");
         const [password,setPassword] = useState("");
-        const [remail,setRemail ]= useState("");
-        const [rpassword,setRpassword] = useState("");
+    //     const [remail,setRemail ]= useState("");
+    //     const [rpassword,setRpassword] = useState("");
        const register = (email, password, cnfmpass) => {
             setEmail(email);
             setPassword(password);
             setcnfmpass(cnfmpass);
         }
-        const login = (remail, rpassword) => {
-            setRemail(remail);
-            setRpassword(rpassword);
-        }
+        // const login = (remail, rpassword) => {
+        //     setRemail(remail);
+        //     setRpassword(rpassword);
+        // }
 
-        const logout = () => {
-            setEmail("");
-            setPassword("");
-        }
+        // const logout = () => {
+        //     setEmail("");
+        //     setPassword("");
+        // }
 
         return(
-            <AuthContext.Provider value={{email,password,remail,rpassword,register,login,logout}}>
+            <AuthContext.Provider value={{email,password,register}}>
                 {children}
             </AuthContext.Provider>
         )

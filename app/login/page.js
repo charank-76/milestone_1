@@ -11,11 +11,11 @@ import HeroSection from "../components/HeroSection";
 export default function Main() {
   const [remail,setRemail] = useState("")
    const [rpassword, setRpassword] = useState("");
-   const { login } = useAuth()
+   //const { login } = useAuth()
   const router = useRouter();
   const {email, password} = useAuth()
-  let pass=password;
-  let mail=email;
+  //let pass=password;
+  //let mail=email;
   return (
     <div className="min-h-screen dark:bg-black bg-white text-white">
      <Navbar/>
@@ -60,12 +60,12 @@ export default function Main() {
                 type="submit"
                 className="bg-yellow-800 text-white py-3 rounded-md font-semibold hover:bg-black mt-4  dark:hover:bg-amber-100 dark:hover:text-black"
                  onClick={(e)=>{
-                  if (rpassword == pass && remail == mail) {
+                  if (rpassword == password && remail == email) {
       console.log(remail);
       console.log(rpassword);
      
 
-      login(remail,rpassword)
+      
       router.push("/"); 
     } else {
       console.log("Login Failed! Invalid credentials.");
