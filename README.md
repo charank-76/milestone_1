@@ -43,7 +43,7 @@ A modern restaurant website built with Next.js, featuring user authentication, m
 - **Rlist** (`app/components/Rlist.js`) - Reservation list
 - **Aboutus** (`app/components/Aboutus.js`) - About us section
 - **Shop** (`app/components/shop.js`) - Shop component
-- **wh** (`app/components/wh.js`) - Who we are component
+- **wh** (`app/components/wh.js`) - Working hour component
 
 ### Contexts
 
@@ -53,10 +53,12 @@ A modern restaurant website built with Next.js, featuring user authentication, m
     
     Next , the planning and the contribution ,   
 
-    #contribution_by_Charan 
+    #contribution_by_Charan   
+
      played the major role in components playing with reusable components to make it a good code.70% in mobile responsivenss and 30% in light and dark theme and some contribution towards pages.  
 
-       #contribution_by_Rajath
+       #contribution_by_Rajath  
+
      played the intermediate role in components playing with reusable components to make it a good code.30% in mobile responsivenss and 70% in light and dark theme and major contribution towards pages.  
 
      we almost completed cloning of the website as the requirements with bonus of auth context feature and finally presented with  class.
