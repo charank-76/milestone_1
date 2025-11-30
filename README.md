@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Milestone1 - Next.js Restaurant Website
 
-## Getting Started
+A modern restaurant website built with Next.js, featuring user authentication, menu display, shopping cart, reservations, and more.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- User registration and login
+- Online menu browsing and ordering
+- Shopping cart functionality
+- Table reservations
+- Chef details and blog
+- Responsive design with Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Pages
 
-## Learn More
+- **Home** (`app/page.js`) - Main landing page
+- **Register** (`app/register/page.js`) - User registration
+- **Login** (`app/login/page.js`) - User login
+- **Shop** (`app/shop/page.js`) - Online shop
+- **Cart** (`app/cart/page.js`) - Shopping cart
+- **Checkout** (`app/checkout/page.js`) - Checkout process
+- **About Us** (`app/about/page.js`) - About the restaurant
+- **Chef Details** (`app/chiefdet/page.js`) - Chef information
+- **Blog** (`app/blog/page.js`) - Blog posts
+- **Menu** (`app/menu/page.js`) - Restaurant menu
+- **Online Reservation** (`app/onlineres/page.js`) - Online reservations
+- **Reservation** (`app/reservation/page.js`) - Reservation page
+- **Error** (`app/error/page.js`) - Error handling page
 
-To learn more about Next.js, take a look at the following resources:
+### Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Navbar** (`app/components/Navbar.js`) - Navigation bar
+- **HeroSection** (`app/components/HeroSection.js`) - Hero section
+- **Footer** (`app/components/Footer.js`) - Footer component
+- **MenuCard** (`app/components/MenuCard.js`) - Menu item cards
+- **LMenuCard** (`app/components/LMenuCard.js`) - Large menu cards
+- **PMenuCard** (`app/components/PMenuCard.js`) - Premium menu cards
+- **BlogList** (`app/components/BlogList.js`) - Blog post list
+- **Customer** (`app/components/Customer.js`) - Customer reviews
+- **Rlist** (`app/components/Rlist.js`) - Reservation list
+- **Aboutus** (`app/components/Aboutus.js`) - About us section
+- **Shop** (`app/components/shop.js`) - Shop component
+- **wh** (`app/components/wh.js`) - Who we are component
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Contexts
 
-## Deploy on Vercel
+- **AuthContext** (`app/contexts/AuthContext.js`) - Authentication context for user management
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    We the team (Rajath k and Charan). first charan made the repo on his github and me did the clone of the repo and became the contributor for this and we play the mechanism of pull and push . many merge conflict occured but resolved it .  
+    
+    Next , the planning and the contribution ,   
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    #contribution_by_Charan 
+     played the major role in components playing with reusable components to make it a good code.70% in mobile responsivenss and 30% in light and dark theme and some contribution towards pages.  
+
+       #contribution_by_Rajath
+     played the intermediate role in components playing with reusable components to make it a good code.30% in mobile responsivenss and 70% in light and dark theme and major contribution towards pages.  
+
+     we almost completed cloning of the website as the requirements with bonus of auth context feature and finally presented with  class.
+
+
+
